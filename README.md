@@ -1,1 +1,0 @@
-# Public-Art-in-Armenia
