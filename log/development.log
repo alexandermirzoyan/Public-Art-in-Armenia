@@ -1,0 +1,989 @@
+Started GET "/" for ::1 at 2019-12-19 15:50:23 +0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.3ms | Allocations: 475)
+Completed 200 OK in 17ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 3753)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-12-19 15:55:40 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static_pages/home" for ::1 at 2019-12-19 15:57:13 +0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 203)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/admin/Desktop/projects/my_tumo_project/public/packs
+[Webpacker] Hash: 53154d7baad00c6a1252
+Version: webpack 4.41.4
+Time: 1464ms
+Built at: 12/19/2019 3:57:17 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0b67a3cc2fcde6055024.js    124 KiB  application  [emitted] [immutable]  application
+js/application-0b67a3cc2fcde6055024.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0b67a3cc2fcde6055024.js js/application-0b67a3cc2fcde6055024.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3191ms (Views: 3186.1ms | ActiveRecord: 0.0ms | Allocations: 19896)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-12-19 15:58:05 +0400
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-12-19 15:58:07 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-19 15:58:11 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.1ms | Allocations: 190)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 1350)
+
+
+Started GET "/" for ::1 at 2019-12-19 15:58:32 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 4898)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:02:28 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/admin/Desktop/projects/my_tumo_project/public/packs
+[Webpacker] Hash: 028c2f4e65275a208e25
+Version: webpack 4.41.4
+Time: 2054ms
+Built at: 12/19/2019 6:02:32 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0f614589e20aa32610d0.js    426 KiB  application  [emitted] [immutable]  application
+js/application-0f614589e20aa32610d0.js.map    498 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0f614589e20aa32610d0.js js/application-0f614589e20aa32610d0.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 3624ms (Views: 3623.7ms | ActiveRecord: 0.0ms | Allocations: 5044)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:05:04 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/admin/Desktop/projects/my_tumo_project/public/packs
+[Webpacker] Hash: 2143d69fabe18bee2184
+Version: webpack 4.41.4
+Time: 784ms
+Built at: 12/19/2019 6:05:06 PM
+                                          Asset       Size            Chunks                         Chunk Names
+         js/application-0f614589e20aa32610d0.js    426 KiB       application  [emitted] [immutable]  application
+     js/application-0f614589e20aa32610d0.js.map    498 KiB       application  [emitted] [dev]        application
+    js/bootstrap_custom-749b017aa1ccf6779e5b.js   3.93 KiB  bootstrap_custom  [emitted] [immutable]  bootstrap_custom
+js/bootstrap_custom-749b017aa1ccf6779e5b.js.map   3.54 KiB  bootstrap_custom  [emitted] [dev]        bootstrap_custom
+                                  manifest.json  738 bytes                    [emitted]              
+Entrypoint application = js/application-0f614589e20aa32610d0.js js/application-0f614589e20aa32610d0.js.map
+Entrypoint bootstrap_custom = js/bootstrap_custom-749b017aa1ccf6779e5b.js js/bootstrap_custom-749b017aa1ccf6779e5b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./app/javascript/packs/bootstrap_custom.js] 0 bytes {bootstrap_custom} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 2042ms (Views: 2041.7ms | ActiveRecord: 0.0ms | Allocations: 5079)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:05:26 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/admin/Desktop/projects/my_tumo_project/public/packs
+[Webpacker] AAAA
+Hash: 2143d69fabe18bee2184
+Version: webpack 4.41.4
+Time: 738ms
+Built at: 12/19/2019 6:05:28 PM
+                                          Asset       Size            Chunks                         Chunk Names
+         js/application-0f614589e20aa32610d0.js    426 KiB       application  [emitted] [immutable]  application
+     js/application-0f614589e20aa32610d0.js.map    498 KiB       application  [emitted] [dev]        application
+    js/bootstrap_custom-749b017aa1ccf6779e5b.js   3.93 KiB  bootstrap_custom  [emitted] [immutable]  bootstrap_custom
+js/bootstrap_custom-749b017aa1ccf6779e5b.js.map   3.54 KiB  bootstrap_custom  [emitted] [dev]        bootstrap_custom
+                                  manifest.json  738 bytes                    [emitted]              
+Entrypoint application = js/application-0f614589e20aa32610d0.js js/application-0f614589e20aa32610d0.js.map
+Entrypoint bootstrap_custom = js/bootstrap_custom-749b017aa1ccf6779e5b.js js/bootstrap_custom-749b017aa1ccf6779e5b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./app/javascript/packs/bootstrap_custom.js] 0 bytes {bootstrap_custom} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 2005ms (Views: 2004.1ms | ActiveRecord: 0.0ms | Allocations: 5078)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:05:33 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/admin/Desktop/projects/my_tumo_project/public/packs
+[Webpacker] Hash: 2143d69fabe18bee2184
+Version: webpack 4.41.4
+Time: 865ms
+Built at: 12/19/2019 6:05:36 PM
+                                          Asset       Size            Chunks                         Chunk Names
+         js/application-0f614589e20aa32610d0.js    426 KiB       application  [emitted] [immutable]  application
+     js/application-0f614589e20aa32610d0.js.map    498 KiB       application  [emitted] [dev]        application
+    js/bootstrap_custom-749b017aa1ccf6779e5b.js   3.93 KiB  bootstrap_custom  [emitted] [immutable]  bootstrap_custom
+js/bootstrap_custom-749b017aa1ccf6779e5b.js.map   3.54 KiB  bootstrap_custom  [emitted] [dev]        bootstrap_custom
+                                  manifest.json  738 bytes                    [emitted]              
+Entrypoint application = js/application-0f614589e20aa32610d0.js js/application-0f614589e20aa32610d0.js.map
+Entrypoint bootstrap_custom = js/bootstrap_custom-749b017aa1ccf6779e5b.js js/bootstrap_custom-749b017aa1ccf6779e5b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./app/javascript/packs/bootstrap_custom.js] 0 bytes {bootstrap_custom} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 2345ms (Views: 2344.4ms | ActiveRecord: 0.0ms | Allocations: 5089)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:38:50 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/admin/Desktop/projects/my_tumo_project/public/packs
+[Webpacker] Hash: 18847c3f818641373045
+Version: webpack 4.41.4
+Time: 4323ms
+Built at: 12/19/2019 6:38:55 PM
+                                          Asset       Size            Chunks                         Chunk Names
+         js/application-e7098523340e7cafd088.js   1.35 MiB       application  [emitted] [immutable]  application
+     js/application-e7098523340e7cafd088.js.map   1.47 MiB       application  [emitted] [dev]        application
+    js/bootstrap_custom-458060187f11fc9c656f.js    562 KiB  bootstrap_custom  [emitted] [immutable]  bootstrap_custom
+js/bootstrap_custom-458060187f11fc9c656f.js.map    649 KiB  bootstrap_custom  [emitted] [dev]        bootstrap_custom
+                                  manifest.json  738 bytes                    [emitted]              
+Entrypoint application = js/application-e7098523340e7cafd088.js js/application-e7098523340e7cafd088.js.map
+Entrypoint bootstrap_custom = js/bootstrap_custom-458060187f11fc9c656f.js js/bootstrap_custom-458060187f11fc9c656f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 819 bytes {application} [built]
+[./app/javascript/packs/bootstrap_custom.js] 456 bytes {bootstrap_custom} {application} [built]
+[./app/javascript/stylesheets/application.scss] 606 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 688 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} {bootstrap_custom} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {bootstrap_custom} [built]
+    + 20 hidden modules
+
+Completed 200 OK in 5608ms (Views: 5607.6ms | ActiveRecord: 0.0ms | Allocations: 5118)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:40:03 +0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 203)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 194ms (Views: 187.5ms | ActiveRecord: 0.0ms | Allocations: 8111)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:41:40 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3920)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:41:46 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3925)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:41:50 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 3921)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:41:51 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 3915)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:41:52 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3925)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:42:01 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 3913)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:42:04 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 3911)
+
+
+Started GET "/" for ::1 at 2019-12-19 18:47:22 +0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 283)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 98.6ms | ActiveRecord: 0.0ms | Allocations: 8283)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 18:50:37 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 4155)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 18:50:49 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 4918)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 18:52:27 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting =>
+    @q_and_a = {"4x1?4", "4x1?4", "4x1?4"}
+                       ^
+/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+...  @q_and_a = {"4x1?4", "4x1?4", "4x1?4"}
+...                              ^
+/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+...a = {"4x1?4", "4x1?4", "4x1?4"}
+...                              ^):
+  
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+Started GET "/static_pages/help" for ::1 at 2019-12-19 18:52:59 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting =>
+    @q_and_a = {"4x1?" : "4", "4x1?4", "4x1?4"}
+                       ^
+/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+    @q_and_a = {"4x1?" : "4", "4x1?4", "4x1?4"}
+                            ^
+/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+...and_a = {"4x1?" : "4", "4x1?4", "4x1?4"}
+...                              ^
+/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+..."4x1?" : "4", "4x1?4", "4x1?4"}
+...                              ^):
+  
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+Started GET "/static_pages/help" for ::1 at 2019-12-19 18:53:24 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting =>
+    @q_and_a = {"4x1?" : "4", "4x8?" : "8"}
+                       ^
+/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+    @q_and_a = {"4x1?" : "4", "4x8?" : "8"}
+                            ^
+/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting end
+...and_a = {"4x1?" : "4", "4x8?" : "8"}
+...                              ^
+/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+... = {"4x1?" : "4", "4x8?" : "8"}
+...                              ^):
+  
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+Started GET "/static_pages/help" for ::1 at 2019-12-19 18:53:33 +0400
+  
+SyntaxError (/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting =>
+    @q_and_a = {"4x1?" : "4", "4x8?" : "8"}
+                       ^
+/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+    @q_and_a = {"4x1?" : "4", "4x8?" : "8"}
+                            ^
+/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting end
+...and_a = {"4x1?" : "4", "4x8?" : "8"}
+...                              ^
+/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+... = {"4x1?" : "4", "4x8?" : "8"}
+...                              ^):
+  
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ':', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+Started GET "/static_pages/help" for ::1 at 2019-12-19 18:54:52 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected ';', expecting =>
+    @q_and_a = {"4x1?" ; "4", "4x8?" ; "8"}
+                       ^
+/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+    @q_and_a = {"4x1?" ; "4", "4x8?" ; "8"}
+                            ^
+/Users/admin/Desktop/projects/my_tumo_project/app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+... = {"4x1?" ; "4", "4x8?" ; "8"}
+...                              ^):
+  
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ';', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ';', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ';', expecting =>
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected ',', expecting end
+app/controllers/static_pages_controller.rb:6: syntax error, unexpected '}', expecting end
+Started GET "/static_pages/help" for ::1 at 2019-12-19 18:58:29 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 4971)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 18:59:03 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.1ms | Allocations: 12)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4061)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:00:03 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.3ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 4991)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:02:06 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.3ms | Allocations: 192)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5032)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:02:16 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 5023)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:02:58 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.6ms | Allocations: 211)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 5043)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:03:31 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 213)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5062)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:03:52 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 243)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 5077)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:04:01 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 229)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 5067)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:04:21 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 5054)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:04:50 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.7ms | Allocations: 229)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 5069)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:05:30 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 221)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 5070)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:05:53 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5069)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:07:15 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 227)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5063)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:08:28 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.1ms | Allocations: 33)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3951)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:13:14 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 247.4ms | Allocations: 147113)
+Completed 500 Internal Server Error in 250ms (ActiveRecord: 0.0ms | Allocations: 148314)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index' for #<#<Class:0x00007fed32b504b0>:0x00007fed32b65540>):
+    14:   <tbody>
+    15:     <% @q_and_a.each_with_index do |(question, answer)| %>
+    16:     <tr>
+    17:     #   <td><%=index%></td>
+    18:       <td><%=question%></td>
+    19:       <td> <%=answer%> </td>
+    20:     </tr>
+  
+app/views/static_pages/help.html.erb:17
+app/views/static_pages/help.html.erb:15:in `each'
+app/views/static_pages/help.html.erb:15:in `each_with_index'
+app/views/static_pages/help.html.erb:15
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:13:23 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 205)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 5045)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:13:34 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1073)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2270)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>StaticPages#help</h1>
+<p>Find me in app/views/static_pages/help.html.erb</p>
+
+<p> <%= @q_and_a %> </p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Index</th>
+      <th scope="col">Question</th>
+      <th scope="col">Answer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @q_and_a.each_with_index do (question, answer) %>
+    <tr>
+      <td><%=question%></td>
+      <td> <%=answer%> </td>
+    </tr>
+    <%end%>
+  </tbody>
+</table>
+):
+1:    <h1>StaticPages#help</h1>
+2:    <p>Find me in app/views/static_pages/help.html.erb</p>
+3:    
+4:    <p> <%= @q_and_a %> </p>
+5:    
+6:    <table class="table">
+7:      <thead>
+8:        <tr>
+9:          <th scope="col">Index</th>
+10:          <th scope="col">Question</th>
+11:          <th scope="col">Answer</th>
+12:        </tr>
+13:      </thead>
+14:      <tbody>
+15:        <% @q_and_a.each_with_index do (question, answer) %>
+16:        <tr>
+17:          <td><%=question%></td>
+18:          <td> <%=answer%> </td>
+19:        </tr>
+20:        <%end%>
+21:      </tbody>
+22:    </table>
+  
+app/views/static_pages/help.html.erb:15: syntax error, unexpected '\n', expecting '='
+app/views/static_pages/help.html.erb:15: syntax error, unexpected '\n', expecting '='
+app/views/static_pages/help.html.erb:15: syntax error, unexpected '\n', expecting '='
+app/views/static_pages/help.html.erb:15: syntax error, unexpected '\n', expecting '='
+app/views/static_pages/help.html.erb:15: syntax error, unexpected '\n', expecting '='
+app/views/static_pages/help.html.erb:15: syntax error, unexpected '\n', expecting '='
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:13:39 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 227)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5070)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:17:19 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 229)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 5063)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:17:28 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 236)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5076)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:18:22 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 5075)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:18:28 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 230)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 5077)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:19:53 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 253)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5091)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:20:52 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 248)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 96ms (Views: 95.0ms | ActiveRecord: 0.0ms | Allocations: 5088)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:21:05 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 248)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5094)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:21:24 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 249)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 5077)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:21:38 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 254)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5089)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:22:29 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 247)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5087)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:22:42 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 247)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 5081)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:22:45 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 247)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 5079)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:23:17 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.9ms | Allocations: 247)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 5087)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:23:46 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 247)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 5093)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:23:52 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 5099)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:24:32 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 248)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 5104)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:24:46 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 248)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 5084)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:24:49 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 247)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 5089)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:25:40 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 248)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 5092)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:26:11 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.7ms | Allocations: 253)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 5098)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:26:33 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.7ms | Allocations: 244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 5090)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-19 19:26:43 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.1ms | Allocations: 33)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3955)
+
+
+Started GET "/" for ::1 at 2019-12-20 15:29:56 +0400
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.4ms | Allocations: 203)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 227ms (Views: 220.8ms | ActiveRecord: 0.0ms | Allocations: 7753)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-20 15:30:05 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 14.0ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 4329)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-20 15:40:17 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.6ms | Allocations: 298)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5137)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-20 15:41:36 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 189.8ms | Allocations: 78047)
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 0.0ms | Allocations: 79249)
+
+
+  
+ActionView::Template::Error (undefined method `prints' for #<#<Class:0x00007fc4303eb060>:0x00007fc4303e9058>
+Did you mean?  print
+               printf
+               sprintf):
+    23: </table>
+    24: 
+    25: <% for i in 0..9 do %>
+    26:   <%= prints i %>
+    27: <% end %>
+    28: 
+    29: <form>
+  
+app/views/static_pages/help.html.erb:26
+app/views/static_pages/help.html.erb:25
+Started GET "/static_pages/help" for ::1 at 2019-12-20 15:41:42 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 110.4ms | Allocations: 75141)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms | Allocations: 76355)
+
+
+  
+ActionView::Template::Error (undefined method `prints' for #<#<Class:0x00007fc430d49f58>:0x00007fc430d6a7d0>
+Did you mean?  print
+               printf
+               sprintf):
+    23: </table>
+    24: 
+    25: <% for i in 0..9 do %>
+    26:   <% prints i %>
+    27: <% end %>
+    28: 
+    29: <form>
+  
+app/views/static_pages/help.html.erb:26
+app/views/static_pages/help.html.erb:25
+Started GET "/static_pages/help" for ::1 at 2019-12-20 15:41:47 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 317)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5190)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-20 15:42:10 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 5175)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-20 15:42:18 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 314)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 5146)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-20 15:42:21 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 315)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5146)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-20 15:42:34 +0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.8ms | Allocations: 321)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 5161)
+
+

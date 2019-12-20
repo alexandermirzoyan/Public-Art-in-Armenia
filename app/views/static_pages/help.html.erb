@@ -1,0 +1,42 @@
+<h1>StaticPages#help</h1>
+<p>Find me in app/views/static_pages/help.html.erb</p>
+
+<p> <%= @q_and_a %> </p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Index</th>
+      <th scope="col">Question</th>
+      <th scope="col">Answer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @q_and_a.each_with_index do |(question, answer), index| %>
+    <tr>
+      <td><%=index%></td>
+      <td><%=question%></td>
+      <td> <%=answer%> </td>
+    </tr>
+    <%end%>
+  </tbody>
+</table>
+
+<p>
+<% for i in 0..9 do %>
+   <%= i %> 
+<% end %>
+</p>
+
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group d-flex flex-column">
+    <label for="exampleTextArea">Description</label>
+    <textarea id="exampleTextArea" rows="4" cols="50" ></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
