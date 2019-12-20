@@ -987,3 +987,710 @@ Processing by StaticPagesController#help as HTML
 Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 5161)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20191220123834)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191220123834"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-12-20 12:38:42.425870"], ["updated_at", "2019-12-20 12:38:42.425870"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/sign_up" for ::1 at 2019-12-20 16:39:21 +0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 205)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 525)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 98.9ms | Allocations: 9036)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 170ms (Views: 153.6ms | ActiveRecord: 0.5ms | Allocations: 23039)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-20 16:39:37 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 79)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1086)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 5235)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-20 16:41:24 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 195)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 465)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2451)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 8454)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-20 16:41:30 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 195)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 465)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2445)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 8168)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-20 16:41:33 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 195)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 465)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2444)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 8412)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-20 16:41:35 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 79)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1085)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 5352)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:41:36 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 214)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 49.0ms | Allocations: 2024)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 56.8ms | ActiveRecord: 0.0ms | Allocations: 7646)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-20 16:41:37 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 79)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1087)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 5366)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:41:38 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1071)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 5410)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-20 16:41:39 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1078)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5322)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:41:39 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1071)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 5403)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-20 16:41:39 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1078)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 5338)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:41:40 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1071)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 5389)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:43:15 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 147)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1147)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 7.2ms | ActiveRecord: 0.5ms | Allocations: 10959)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-20 16:43:17 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5585)
+
+
+Started POST "/users" for ::1 at 2019-12-20 16:43:43 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"Octe9s1zMC1AVTzI1IgjBT8ymaMMFJ8wBvrfyqC0PlEMjJKCZ2HQ+j5EYBgo4cdEqIAFbO3YATbXkzTXp8xjyA==", "user"=>{"email"=>"asdads@asdassdas.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "asdads@asdassdas.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "asdads@asdassdas.com"], ["encrypted_password", "$2a$11$ze2ROpctpkH8rmqw0zLBxuRt/B951kT88IMC0CISPpEq/.ewHyisy"], ["created_at", "2019-12-20 12:43:43.321360"], ["updated_at", "2019-12-20 12:43:43.321360"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 141ms (ActiveRecord: 2.1ms | Allocations: 10261)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:43:43 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 87)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.1ms | Allocations: 6414)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-20 16:43:59 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HuydVcKcWkqDzhmWIsivTVh7OSwyWVs2Ib9cq1JObH4VaEW6ypf7EGvOdQTTuMID9zGmBhIXFvwaOMBwAMDexg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.1ms | Allocations: 5396)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:43:59 +0400
+Processing by StaticPagesController#home as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 308)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:43:59 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1085)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5435)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-20 16:44:04 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"ep6L536eAHTawlJrtOJcnc1ZOK979j4qjpYGvoD8IlBSwAeMKH6BtBWs/RIrOUv0k+HgZpnxPKfygXoarTjeMw==", "user"=>{"email"=>"asdads@asdassdas.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "asdads@asdassdas.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 126ms (ActiveRecord: 0.3ms | Allocations: 3301)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:44:04 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 5494)
+
+
+Started GET "/users/edit" for ::1 at 2019-12-20 16:44:07 +0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/edit.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1896)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 7652)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-20 16:44:35 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t/LuF6v7A/hgpnTtD3DFNazpFXSu7AMN//wraNo+4LcK+w8Hj3rRfvZVpjORpMQ3UD2DOISoNfLMhsQeYjPDqw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 2109)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:44:35 +0400
+Processing by StaticPagesController#home as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 318)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:44:35 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1084)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 5443)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-20 16:44:41 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"HNTgrwqokJJMEjVfwCXea+mQ5smnJW8kpm0b64U7IjpBQ3khIEmNwdORcKzA1y7BaER+bBRsL24QwOm5XZPSOA==", "user"=>{"email"=>"asdads@asdassdas.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "asdads@asdassdas.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 124ms (ActiveRecord: 0.2ms | Allocations: 2645)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:44:41 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 5479)
+
+
+Started GET "/users/edit" for ::1 at 2019-12-20 16:45:01 +0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/edit.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1390)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 6898)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-20 16:45:05 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KCeHz2t+6OIWkP+hz1Ze50jGmXhCQ3jElK+nc1VTLbvHA5pl7fMKrAAQKKtxkG/LD93oqKQqlWmG8YqF4lJI7g=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 2108)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:45:05 +0400
+Processing by StaticPagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 312)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:45:05 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 5416)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-20 16:45:07 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1078)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 5342)
+
+
+Started POST "/users" for ::1 at 2019-12-20 16:45:26 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"Fe9XlvEfRk+QVhBvxTSe0I6fAWjpbyUzFSAoBIGqV9wLu1C+NAdORC7XfyQi1ybM0sjTY7KoEoE2xAwUqU2izw==", "user"=>{"email"=>"qqqqqq@hfgfhhf.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "qqqqqq@hfgfhhf.ru"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 242)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1309)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 133ms (Views: 7.2ms | ActiveRecord: 0.3ms | Allocations: 11193)
+
+
+Started POST "/users" for ::1 at 2019-12-20 16:45:43 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"az6KMKuusZ7wo3MnoTEzlmVqS9jYrjIFAkIKuazRbxpBhZfjeBktn2S2+HSNP5UW8FXLPUySSzNCMR92Hb5wKQ==", "user"=>{"email"=>"qqqqqq@hfgfhhf.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "qqqqqq@hfgfhhf.ru"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "qqqqqq@hfgfhhf.ru"], ["encrypted_password", "$2a$11$ypdQjQqBSpgJ6foopmKXX.8uKyQSSV4LcTC4wldly7AzfPJAFM0vm"], ["created_at", "2019-12-20 12:45:43.864149"], ["updated_at", "2019-12-20 12:45:43.864149"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 128ms (ActiveRecord: 1.5ms | Allocations: 6719)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:45:43 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 5489)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-20 16:45:47 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ESY2EY30Tv2/E1b1XhLNLjywJKoBrwRm20TXG4Pv/QM7nSvCXkPS/CsG3aZyHGuuqY+kT5WTfVCbN8LUMoDiMA=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 2127)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:45:47 +0400
+Processing by StaticPagesController#home as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 310)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:45:47 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5422)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-20 16:45:58 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"5f4K2LsZAtJNFgZDbrisR7cT2UI6AAl/eE8dU68SyArRdnZ5nFShXpqXbeapWqqXGEqNkkwWN7BEyZ02jseyOQ==", "user"=>{"email"=>"qqqqqq@hfgfhhf.ru", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "qqqqqq@hfgfhhf.ru"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", "2019-12-20 12:45:58.648386"], ["updated_at", "2019-12-20 12:45:58.648572"], ["id", 2]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 161ms (ActiveRecord: 2.0ms | Allocations: 6949)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:45:58 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.1ms | Allocations: 5496)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:47:28 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 333)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 6826)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-12-20 16:47:36 +0400
+Processing by StaticPagesController#help as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 332)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 5841)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-12-20 16:47:41 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:49:03 +0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1860)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-20 16:49:05 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YoUxja82kLTzzikj0uqx2KKidd542eGp/i40Y8zgymfr+JY+cMLbTOoltz44gauF5w23OadTHl8k4A6XSVgfEQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.2ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", "2019-12-20 12:49:05.450544"], ["id", 2]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms | Allocations: 6169)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:49:05 +0400
+Processing by StaticPagesController#home as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 312)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:49:05 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 523)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2005)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 7873)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:49:06 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1078)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 5300)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:49:07 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 134)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1071)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5286)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:49:07 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1071)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5280)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-20 16:49:15 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"3+Td+D6tnZxcOsbE782lYwrWm0UgVyfPoL57l49zsidtoBENTo1W8TYXyPMeelOu2VJ8KO8jtyFEzuM4CJ783w==", "user"=>{"email"=>"qqqqqq@hfgfhhf.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "qqqqqq@hfgfhhf.ru"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 125ms (ActiveRecord: 0.2ms | Allocations: 3755)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:49:15 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 330)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 6365)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:49:37 +0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1765)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:49:59 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 329)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.1ms | Allocations: 6807)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-12-20 16:50:12 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static_pages/help" for ::1 at 2019-12-20 16:50:50 +0400
+Processing by StaticPagesController#help as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 318)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 5818)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:53:07 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 5464)
+
+
+Started GET "/users/edit" for ::1 at 2019-12-20 16:53:10 +0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/edit.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 195)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/registrations/edit.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2259)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 0.5ms | Allocations: 8846)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:53:20 +0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1783)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:53:20 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.1ms | Allocations: 5493)
+
+
+Started GET "/users/sign_out" for ::1 at 2019-12-20 16:53:26 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-20 16:53:34 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 5451)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-20 16:53:36 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iQyrBbIK5ZvHLr/0IQu71W95hhG5B+rcAK2ofQIqvybj/fs283ZjaPx3/9l70nlD9KRHe4GctPS1okkA13LB9w=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 2103)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:53:36 +0400
+Processing by StaticPagesController#home as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 312)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 16:53:36 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 521)
+  Rendered /Users/admin/.rvm/gems/ruby-2.6.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1997)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 7013)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-20 16:53:46 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"N+XkSUWWVXfc9gUWaaj36GOf1p1keHhQZVNGEtzzBPndydqzQ3pYF47XeJIE/AJkwduYDTRucKadAvb1s9jmcg==", "user"=>{"email"=>"asdads@asdassdas.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "asdads@asdassdas.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 138ms (ActiveRecord: 0.1ms | Allocations: 3753)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:53:46 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.1ms | Allocations: 5482)
+
+
+Started GET "/" for ::1 at 2019-12-20 16:54:21 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 6793)
+
+
