@@ -4610,3 +4610,1417 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 370ms (Views: 368.8ms | ActiveRecord: 0.0ms | Allocations: 8271)
 
 
+Started GET "/" for ::1 at 2019-12-21 10:33:50 +0400
+  [1m[35m (15.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.0ms | Allocations: 1110)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 10:33:51 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 14.2ms | Allocations: 626)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 87.7ms | Allocations: 3032)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 404ms (Views: 393.8ms | ActiveRecord: 0.7ms | Allocations: 21824)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-21 10:35:13 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"px8PJQpfJA5dFOG9Mh0ZKgQVbrjbhGHA6gpiRp27HH7vLLjBopiOHVY1f9Pi4eHCTXzQZ/X0JvShdoKTgPeRcA==", "user"=>{"email"=>"asdads@asdassdas.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "asdads@asdassdas.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 168ms (ActiveRecord: 0.7ms | Allocations: 5312)
+
+
+Started GET "/" for ::1 at 2019-12-21 10:35:13 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 16.4ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.2ms | Allocations: 6305)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 10:35:17 +0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1784)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-21 10:35:26 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NGOAbU1sImpItnKjO5rPt8yb/Nn6oa9iATHJ36NQvx8otFelBXMWSKLbHBgw3zwkWghDNe7zXTnz0Q4npzvuHQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 38ms (ActiveRecord: 0.1ms | Allocations: 2662)
+
+
+Started GET "/" for ::1 at 2019-12-21 10:35:26 +0400
+Processing by StaticPagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 304)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 10:35:26 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1089)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 5459)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:35:28 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 8.8ms | Allocations: 206)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 124)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 20.9ms | Allocations: 1960)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 6984)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 10:39:08 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1090)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 5464)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:45:30 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2349)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 8259)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:45:31 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1145)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5451)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:45:43 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms | Allocations: 8245)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:45:44 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1144)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 5440)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:45:45 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 5424)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:45:55 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2349)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 8266)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:46:00 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1144)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 5434)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:46:11 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 8250)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:46:21 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2343)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 8252)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:49:03 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2349)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 157ms (Views: 156.0ms | ActiveRecord: 0.0ms | Allocations: 18585)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:49:36 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2343)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms | Allocations: 17601)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:51:52 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2349)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 8281)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 10:54:09 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 8246)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 10:56:07 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1378)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 6418)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 10:56:18 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 5439)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 10:56:20 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 5432)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:00:01 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 5428)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:02:30 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2348)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 5482)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MyTumoProject</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="asd" >
+    <%= yield %>
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
+    <p class="navbar-text float-right">
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link','m-auto' %>
+<% end %>
+</p>
+
+
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MyTumoProject</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:    
+12:      <body class="asd" >
+13:        <%= yield %>
+14:        <% if notice %>
+15:          <p class="alert alert-success"><%= notice %></p>
+16:        <% end %>
+17:        <% if alert %>
+18:          <p class="alert alert-danger"><%= alert %></p>
+19:        <% end %>
+20:    
+21:        <p class="navbar-text float-right">
+22:    <% if user_signed_in? %>
+23:      Logged in as <strong><%= current_user.email %></strong>.
+24:      <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+25:      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+26:    <% else %>
+27:      <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+28:      <%= link_to "Login", new_user_session_path, :class => 'navbar-link','m-auto' %>
+29:    <% end %>
+30:    </p>
+31:    
+32:    
+33:      </body>
+34:    </html>
+  
+app/views/layouts/application.html.erb:28: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:37: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:28: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:37: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:28: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:37: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:28: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:37: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:28: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:37: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:28: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:37: syntax error, unexpected end, expecting ')'
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:02:42 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 468)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2367)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 8342)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:03:30 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2343)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 8244)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:03:31 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1144)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 5428)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:03:32 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 5423)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:04:43 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 525)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 7902)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:04:47 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1817)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 6782)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:04:48 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1142)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 5438)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:04:49 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 5431)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:07:47 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 467)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2348)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 8273)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:07:48 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1144)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 5430)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:07:50 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 5435)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:07:53 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1389)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 6421)
+
+
+Started POST "/users" for ::1 at 2019-12-21 11:08:05 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"YgiZVi17YmTkURX97tBLMJLDhEXX8NN+s0sEY26DjuVgGX+r1DwLUKfXFdtIWkhfaEsoDA+e7lBcbn3Al0RnOA==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 353)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1491)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 8889)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:08:08 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1083)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 5443)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:08:28 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 523)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1906)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 7882)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:08:38 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1081)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 5459)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:10:03 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 477)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 8267)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:11:30 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 476)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2352)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 8268)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:12:39 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 476)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2357)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 8293)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:13:51 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 485)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2361)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 8274)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:14:27 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 478)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2354)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 8252)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:14:28 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1155)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 5445)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:16:06 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 478)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2355)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 8259)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:16:47 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 479)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2355)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 8257)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:17:41 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 479)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2356)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 8264)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:18:29 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 479)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2355)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 8273)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:18:45 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 478)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2354)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 8259)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:19:47 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 479)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2360)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 8269)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:19:55 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 478)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2354)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 8274)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:28 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 479)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2355)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 8275)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:29 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 5454)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:29 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 5435)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:29 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 5435)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:34 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 479)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2355)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 8259)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:35 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 5446)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:35 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 5439)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:47 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 479)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2355)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 8273)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:48 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 5444)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:48 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 5445)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:48 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 5447)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:49 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5435)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:55 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 839)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 102.7ms | Allocations: 2725)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 112ms (Views: 111.0ms | ActiveRecord: 0.0ms | Allocations: 8643)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:56 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 478)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2354)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 8264)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:56 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5448)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:20:56 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 5443)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:21:13 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 479)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2355)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 8265)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:21:14 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5450)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:21:14 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 5437)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:21:43 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 478)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2354)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 8258)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:22:56 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 479)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2355)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 8269)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:22:56 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 5446)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:22:56 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 5445)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:22:56 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 5453)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:22:56 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 5451)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:12 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 479)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2360)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 8272)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:12 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5436)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:12 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 5423)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:13 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5443)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:32 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 479)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2355)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 8269)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:32 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 5440)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:32 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 5441)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:32 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 5429)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:33 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 5435)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:33 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 5435)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:48 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 478)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2354)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 8278)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:48 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 5444)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:48 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 5433)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:23:48 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 5431)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:24:14 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 5437)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:24:16 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1381)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 6419)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:29:40 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 526)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1922)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 7909)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:30:48 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1250)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 3144)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2 class="text-center" >Log in</h2>
+
+<div class="d-flex justify-content-center" >
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "Log in ", %>
+  </div>
+<% end %>
+</div>
+
+<%= render "devise/shared/links" %>
+
+):
+1:    <h2 class="text-center" >Log in</h2>
+2:    
+3:    <div class="d-flex justify-content-center" >
+4:    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+5:      <div class="field">
+6:        <%= f.label :email %><br />
+7:        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+8:      </div>
+9:    
+10:      <div class="field">
+11:        <%= f.label :password %><br />
+12:        <%= f.password_field :password, autocomplete: "current-password" %>
+13:      </div>
+14:    
+15:      <% if devise_mapping.rememberable? %>
+16:        <div class="field">
+17:          <%= f.check_box :remember_me %>
+18:          <%= f.label :remember_me %>
+19:        </div>
+20:      <% end %>
+21:    
+22:      <div class="actions">
+23:        <%= f.submit "Log in ", %>
+24:      </div>
+25:    <% end %>
+26:    </div>
+27:    
+28:    <%= render "devise/shared/links" %>
+  
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:31:01 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1250)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3151)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2 class="text-center" >Log in</h2>
+
+<div class="d-flex justify-content-center" >
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "Log in ", %>
+  </div>
+<% end %>
+</div>
+
+<%= render "devise/shared/links" %>
+
+):
+1:    <h2 class="text-center" >Log in</h2>
+2:    
+3:    <div class="d-flex justify-content-center" >
+4:    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+5:      <div class="field">
+6:        <%= f.label :email %><br />
+7:        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+8:      </div>
+9:    
+10:      <div class="field">
+11:        <%= f.label :password %><br />
+12:        <%= f.password_field :password, autocomplete: "current-password" %>
+13:      </div>
+14:    
+15:      <% if devise_mapping.rememberable? %>
+16:        <div class="field">
+17:          <%= f.check_box :remember_me %>
+18:          <%= f.label :remember_me %>
+19:        </div>
+20:      <% end %>
+21:    
+22:      <div class="actions">
+23:        <%= f.submit "Log in ", %>
+24:      </div>
+25:    <% end %>
+26:    </div>
+27:    
+28:    <%= render "devise/shared/links" %>
+  
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:31:13 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1237)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1911)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2 class="text-center" >Log in</h2>
+
+<div class="d-flex justify-content-center" >
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "Log in ", %>
+  </div>
+<% end %>
+</div>
+
+<%= render "devise/shared/links" %>
+
+):
+1:    <h2 class="text-center" >Log in</h2>
+2:    
+3:    <div class="d-flex justify-content-center" >
+4:    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+5:      <div class="field">
+6:        <%= f.label :email %><br />
+7:        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+8:      </div>
+9:    
+10:      <div class="field">
+11:        <%= f.label :password %><br />
+12:        <%= f.password_field :password, autocomplete: "current-password" %>
+13:      </div>
+14:    
+15:      <% if devise_mapping.rememberable? %>
+16:        <div class="field">
+17:          <%= f.check_box :remember_me %>
+18:          <%= f.label :remember_me %>
+19:        </div>
+20:      <% end %>
+21:    
+22:      <div class="actions">
+23:        <%= f.submit "Log in ", %>
+24:      </div>
+25:    <% end %>
+26:    </div>
+27:    
+28:    <%= render "devise/shared/links" %>
+  
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:23: syntax error, unexpected ')'
+app/views/devise/sessions/new.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/devise/sessions/new.html.erb:31: syntax error, unexpected end, expecting ')'
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:31:25 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 526)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1911)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 7898)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:31:35 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 526)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 7896)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:31:36 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1081)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 5453)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:31:37 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 5444)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:31:53 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 526)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1913)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 7915)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:32:44 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1826)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 6796)
+
+
+Started POST "/users" for ::1 at 2019-12-21 11:33:37 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"xBhg+qSqcjjHSmBdC+XemCat6w2fJqwOBWgOn20D6+3GCYYHXe0bDITMYHutb9333CVHREdIkSDqTXc8lMQCMA==", "user"=>{"email"=>"alexandr.mirz12@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alexandr.mirz12@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (13.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "alexandr.mirz12@gmail.com"], ["encrypted_password", "$2a$11$BtEucpcIH1QvEn4U3Sjiues6UtDsnJW40W4y4fxsYfNA02TaOLTy6"], ["created_at", "2019-12-21 07:33:37.236749"], ["updated_at", "2019-12-21 07:33:37.236749"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 144ms (ActiveRecord: 14.7ms | Allocations: 7977)
+
+
+Started GET "/" for ::1 at 2019-12-21 11:33:37 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 79)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 6283)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-21 11:33:40 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fKYdydfS3U+V2zDzz7xfkYV4sUd76joUAoYHIvWA68lXNrAqrMXymnGyWkJvd8maiUrTxoSi6qSZDUYDeXz40g=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 2123)
+
+
+Started GET "/" for ::1 at 2019-12-21 11:33:40 +0400
+Processing by StaticPagesController#home as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 310)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 11:33:40 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1089)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5475)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-21 11:33:43 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1155)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 5446)
+
+
