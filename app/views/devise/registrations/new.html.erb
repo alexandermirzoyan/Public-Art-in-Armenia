@@ -1,8 +1,8 @@
 <div class="d-flex flex-column justify-content-center registration-main-wrapper" >
-<div class="container d-flex flex-column registration-input-wrapper w-50" >
+<div class="container d-flex flex-column justify-content-around registration-input-wrapper w-50" >
   <h2 class="text-center text-uppercase pt-5" >Create Account</h2>
 
-  <div class="m-auto w-100" >
+  <div class="w-100" >
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -25,11 +25,13 @@
       </div>
 
       <div class="actions w-50 rounded m-auto d-flex justify-content-center ">
-        <%= f.submit "Sign up", class: "btn btn-outline-primary w-100 p-2" %>
+        <%= f.submit "Sign up", class: "w-100 p-2 sign-up-button" %>
       </div>
     <% end %>
   </div>
-
-  <%= render "devise/shared/links" %>
+  <div class="d-flex flex-column sign-up-page-login-wrapper" >
+    <p class="text-center" >Already have an account?</p>
+    <%= render "devise/shared/links" %>
+  </div>
 </div>
 </div>
