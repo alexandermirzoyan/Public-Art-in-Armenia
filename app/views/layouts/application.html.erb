@@ -10,7 +10,14 @@
   </head>
 
   <body class="asd" >
-    <%= yield %>
+    <div class="d-flex main-page-wraper" >
+      <div class="w-25 navigation-wrapper" >
+        <%= render "layouts/header" %>
+      </div>
+      <div class="main-content-wrapper" >
+        <%= yield %>
+      </div>
+    </div>
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
     <% end %>
