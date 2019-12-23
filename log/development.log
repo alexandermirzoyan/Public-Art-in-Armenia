@@ -9221,3 +9221,2274 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 5633)
 
 
+Started GET "/users/sign_in" for ::1 at 2019-12-23 17:39:29 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1378)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 242)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.0ms | Allocations: 6586)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:39:33 +0400
+Processing by StaticPagesController#post as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 321)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 17:39:33 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 234)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 5635)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-23 17:39:41 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1155)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 242)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5634)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 17:39:44 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 234)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 5628)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-23 17:39:50 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"8lS8cO8ubYvh+ni+WJJ6D1CNmYV1EcuXVFqrQdvkBNVqxrx+Y9Yywn5O7dq9yJBFz05OIFfcLrv1xBvgELHfBg==", "user"=>{"email"=>"alexandr.mirz12@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in "}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "alexandr.mirz12@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/static_pages/post
+Completed 302 Found in 125ms (ActiveRecord: 0.3ms | Allocations: 3830)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:39:50 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.2ms | Allocations: 77)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 160)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 6326)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:43:04 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1015)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 3686)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>ds</h1>
+
+<%= image_tag ( "rand_front/#{@random_image}", style='height:50vw;width:100vw;margin-bottom:20px;') %>
+
+):
+1:    <h1>ds</h1>
+2:    
+3:    <%= image_tag ( "rand_front/#{@random_image}", style='height:50vw;width:100vw;margin-bottom:20px;') %>
+  
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ')', expecting end
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:43:36 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1008)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 3678)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>ds</h1>
+
+<%= image_tag ( "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/google-play-store-apps-malware-796x450.jpg", style='height:50vw;width:100vw;margin-bottom:20px;') %>
+
+):
+1:    <h1>ds</h1>
+2:    
+3:    <%= image_tag ( "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/google-play-store-apps-malware-796x450.jpg", style='height:50vw;width:100vw;margin-bottom:20px;') %>
+  
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:3: syntax error, unexpected ')', expecting end
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:44:15 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1875)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms | Allocations: 4544)
+
+
+  
+ActionView::Template::Error (undefined method `symbolize_keys' for "height:50vw;width:100vw;margin-bottom:20px;":String):
+    1: <h1>ds</h1>
+    2: 
+    3: <%= image_tag( "rand_front/#{@random_image}", style='height:50vw;width:100vw;margin-bottom:20px;') %>
+  
+app/views/static_pages/post.html.erb:3
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:45:07 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1871)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 4540)
+
+
+  
+ActionView::Template::Error (undefined method `symbolize_keys' for "height:50vw;width:100vw;margin-bottom:20px;":String):
+    1: <h1>ds</h1>
+    2: 
+    3: <%= image_tag( "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/google-play-store-apps-malware-796x450.jpg", style='height:50vw;width:100vw;margin-bottom:20px;') %>
+  
+app/views/static_pages/post.html.erb:3
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:45:18 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.4ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 414)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 7227)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:45:39 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.3ms | Allocations: 117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 414)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 7206)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:49:58 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.3ms | Allocations: 116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 414)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 7201)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:50:14 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.5ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 414)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.1ms | Allocations: 7234)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:50:37 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 414)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 7218)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:50:49 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 414)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 7216)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:51:07 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 414)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 7208)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:52:00 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 285ms (Views: 283.0ms | ActiveRecord: 0.1ms | Allocations: 16587)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:54:06 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.1ms | Allocations: 15227)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:54:22 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 18ms (Views: 5.1ms | ActiveRecord: 0.1ms | Allocations: 5585)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:55:35 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 5575)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:56:11 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.5ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 413)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.2ms | Allocations: 7230)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:56:58 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 412)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 7204)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:57:18 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 411)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 7209)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:57:44 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 5601)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:57:49 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 426)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 7224)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:58:35 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 5583)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 17:58:36 +0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1797)
+
+
+Started GET "/" for ::1 at 2019-12-23 17:58:37 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 10.1ms | Allocations: 160)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.1ms | Allocations: 5824)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:58:38 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 5583)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:59:07 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 5589)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 17:59:14 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.1ms | Allocations: 5587)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:00:16 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.3ms | Allocations: 122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 422)
+Completed 200 OK in 72ms (Views: 69.9ms | ActiveRecord: 0.1ms | Allocations: 17807)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:00:28 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.1ms | Allocations: 15218)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:00:31 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.1ms | Allocations: 5583)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:00:32 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.1ms | Allocations: 5575)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:00:32 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 18ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 5587)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:00:32 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 5569)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:00:55 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.2ms | Allocations: 16527)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:01:04 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.1ms | Allocations: 16503)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:01:11 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.1ms | Allocations: 16952)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:01:12 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 5571)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:01:13 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.2ms | Allocations: 5592)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:01:13 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 5592)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:01:26 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.1ms | Allocations: 16484)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:01:27 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.1ms | Allocations: 5583)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:01:27 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.1ms | Allocations: 5577)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:01:28 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 5567)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:01:32 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.1ms | Allocations: 16058)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:01:45 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.2ms | Allocations: 15631)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:02:59 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 91ms (Views: 88.8ms | ActiveRecord: 0.1ms | Allocations: 16525)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:03:20 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.1ms | Allocations: 16478)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:03:26 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.1ms | Allocations: 16479)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:04:02 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.4ms | Allocations: 122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 7264)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:04:03 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 5577)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:05:39 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 277.5ms | Allocations: 162140)
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 0.1ms | Allocations: 164804)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x00007fb0b132b158>:0x00007fb0b132caf8>
+Did you mean?  rescue):
+    3: <div class="input-post-wrapper" >
+    4:     <div class="post-form-wrapper">
+    5:         <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+    6:         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    7:             
+    8:         <% end %>
+    9:     </div>
+  
+app/views/static_pages/post.html.erb:6
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:06:04 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 233.8ms | Allocations: 162105)
+Completed 500 Internal Server Error in 238ms (ActiveRecord: 0.1ms | Allocations: 164768)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x00007fb0b04581a8>:0x00007fb0b047ce90>
+Did you mean?  rescue):
+    3: <div class="input-post-wrapper" >
+    4:     <div class="post-form-wrapper">
+    5:         <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+    6:         <%= form_for(resource, as: resource_name) do |f| %>
+    7:             
+    8:         <% end %>
+    9:     </div>
+  
+app/views/static_pages/post.html.erb:6
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:06:16 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1025)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 3686)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    3: <div class="input-post-wrapper" >
+    4:     <div class="post-form-wrapper">
+    5:         <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+    6:         <%= form_for() do |f| %>
+    7:             
+    8:         <% end %>
+    9:     </div>
+  
+app/views/static_pages/post.html.erb:6
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:06:49 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1030)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 3692)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- <%= image_tag( "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/google-play-store-apps-malware-796x450.jpg") %> -->
+
+<div class="input-post-wrapper" >
+    <div class="post-form-wrapper">
+        <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+        <%= form_for @user, html: { :"data-abide" => "" } do |f| %>
+    </div>
+</div>
+):
+1:    <!-- <%= image_tag( "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/google-play-store-apps-malware-796x450.jpg") %> -->
+2:    
+3:    <div class="input-post-wrapper" >
+4:        <div class="post-form-wrapper">
+5:            <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+6:            <%= form_for @user, html: { :"data-abide" => "" } do |f| %>
+7:        </div>
+8:    </div>
+  
+app/views/static_pages/post.html.erb:10: syntax error, unexpected end-of-input, expecting end
+app/views/static_pages/post.html.erb:10: syntax error, unexpected end-of-input, expecting end
+app/views/static_pages/post.html.erb:10: syntax error, unexpected end-of-input, expecting end
+app/views/static_pages/post.html.erb:10: syntax error, unexpected end-of-input, expecting end
+app/views/static_pages/post.html.erb:10: syntax error, unexpected end-of-input, expecting end
+app/views/static_pages/post.html.erb:10: syntax error, unexpected end-of-input, expecting end
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:07:11 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1013)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 3675)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<div class="input-post-wrapper" >
+    <div class="post-form-wrapper">
+        <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+        <%= form_for @user, html: { :"data-abide" => "" } do |f| %>
+    </div>
+</div>
+):
+1:    
+2:    <div class="input-post-wrapper" >
+3:        <div class="post-form-wrapper">
+4:            <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+5:            <%= form_for @user, html: { :"data-abide" => "" } do |f| %>
+6:        </div>
+7:    </div>
+  
+app/views/static_pages/post.html.erb:9: syntax error, unexpected end-of-input, expecting end
+app/views/static_pages/post.html.erb:9: syntax error, unexpected end-of-input, expecting end
+app/views/static_pages/post.html.erb:9: syntax error, unexpected end-of-input, expecting end
+app/views/static_pages/post.html.erb:9: syntax error, unexpected end-of-input, expecting end
+app/views/static_pages/post.html.erb:9: syntax error, unexpected end-of-input, expecting end
+app/views/static_pages/post.html.erb:9: syntax error, unexpected end-of-input, expecting end
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:07:47 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 358)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 426)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 7471)
+
+
+Started GET "/search?q=asdas&commit=Search" for ::1 at 2019-12-23 18:07:59 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/search?q=asdas&commit=Search" for ::1 at 2019-12-23 18:08:00 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/search?q=asdas&commit=Search" for ::1 at 2019-12-23 18:08:01 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/search?q=asdas&commit=Search" for ::1 at 2019-12-23 18:08:01 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:08:12 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 350)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 422)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 7457)
+
+
+Started GET "/post?q=asdasdsa&commit=Search" for ::1 at 2019-12-23 18:08:14 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/post?q=asdasdsa&commit=Search" for ::1 at 2019-12-23 18:08:14 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/post?q=asdasdsa&commit=Search" for ::1 at 2019-12-23 18:08:14 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:08:48 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.5ms | Allocations: 351)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 422)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.1ms | Allocations: 7472)
+
+
+Started GET "/post?q=&commit=Search" for ::1 at 2019-12-23 18:08:51 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:09:09 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 348)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 7457)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:11:17 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.5ms | Allocations: 352)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 422)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 7471)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:14:37 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.5ms | Allocations: 351)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 7452)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:14:50 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.5ms | Allocations: 356)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 7470)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:16:10 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 365)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 7476)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:18:57 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1100)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 3758)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- <%= image_tag( "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/google-play-store-apps-malware-796x450.jpg") %> -->
+
+<div class="input-post-wrapper" >
+    <div class="post-form-wrapper">
+        <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+        <%= form_with(url: "/post", method: "get") do %>
+            <div class="d-flex flex-column" >
+                <%= label_tag(:q, "Name") %>
+                <%= text_field_tag(:q, :placeholder "Enter your name") %>
+            </div>
+            <!--  <%= submit_tag("Search") %> -->
+        <% end %>
+    </div>
+</div>
+):
+1:    <!-- <%= image_tag( "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/google-play-store-apps-malware-796x450.jpg") %> -->
+2:    
+3:    <div class="input-post-wrapper" >
+4:        <div class="post-form-wrapper">
+5:            <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+6:            <%= form_with(url: "/post", method: "get") do %>
+7:                <div class="d-flex flex-column" >
+8:                    <%= label_tag(:q, "Name") %>
+9:                    <%= text_field_tag(:q, :placeholder "Enter your name") %>
+10:                </div>
+11:                <!--  <%= submit_tag("Search") %> -->
+12:            <% end %>
+13:        </div>
+14:    </div>
+  
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:19:01 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 366)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 7477)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:20:25 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.5ms | Allocations: 358)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 7471)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:20:42 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 7453)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:20:53 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1100)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 3758)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- <%= image_tag( "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/google-play-store-apps-malware-796x450.jpg") %> -->
+
+<div class="input-post-wrapper" >
+    <div class="post-form-wrapper">
+        <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+        <%= form_with(url: "/post", method: "get") do %>
+            <div class="d-flex flex-column" >
+                <%= label_tag(:q, "Name") %>
+                <%= text_field_tag(:q, :placeholder "Enter your name") %>
+            </div>
+            <!--  <%= submit_tag("Search") %> -->
+        <% end %>
+    </div>
+</div>
+):
+1:    <!-- <%= image_tag( "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/google-play-store-apps-malware-796x450.jpg") %> -->
+2:    
+3:    <div class="input-post-wrapper" >
+4:        <div class="post-form-wrapper">
+5:            <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+6:            <%= form_with(url: "/post", method: "get") do %>
+7:                <div class="d-flex flex-column" >
+8:                    <%= label_tag(:q, "Name") %>
+9:                    <%= text_field_tag(:q, :placeholder "Enter your name") %>
+10:                </div>
+11:                <!--  <%= submit_tag("Search") %> -->
+12:            <% end %>
+13:        </div>
+14:    </div>
+  
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:21:05 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1105)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.1ms | Allocations: 3771)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- <%= image_tag( "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/google-play-store-apps-malware-796x450.jpg") %> -->
+
+<div class="input-post-wrapper" >
+    <div class="post-form-wrapper">
+        <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+        <%= form_with(url: "/post", method: "get") do %>
+            <div class="d-flex flex-column" >
+                <%= label_tag(:q, "Name") %>
+                <%= text_field_tag(:placeholder "Enter your name", :q) %>
+            </div>
+            <!--  <%= submit_tag("Search") %> -->
+        <% end %>
+    </div>
+</div>
+):
+1:    <!-- <%= image_tag( "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/google-play-store-apps-malware-796x450.jpg") %> -->
+2:    
+3:    <div class="input-post-wrapper" >
+4:        <div class="post-form-wrapper">
+5:            <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+6:            <%= form_with(url: "/post", method: "get") do %>
+7:                <div class="d-flex flex-column" >
+8:                    <%= label_tag(:q, "Name") %>
+9:                    <%= text_field_tag(:placeholder "Enter your name", :q) %>
+10:                </div>
+11:                <!--  <%= submit_tag("Search") %> -->
+12:            <% end %>
+13:        </div>
+14:    </div>
+  
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected ')', expecting end
+app/views/static_pages/post.html.erb:16: syntax error, unexpected end, expecting end-of-input
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:21:28 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 1.0ms | Allocations: 366)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 422)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.1ms | Allocations: 7477)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:22:00 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1100)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 3748)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- <%= image_tag( "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/google-play-store-apps-malware-796x450.jpg") %> -->
+
+<div class="input-post-wrapper" >
+    <div class="post-form-wrapper">
+        <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+        <%= form_with(url: "/post", method: "get") do %>
+            <div class="d-flex flex-column" >
+                <%= label_tag(:q, "Name") %>
+                <%= text_field_tag(:q) placeholder: "Enter your name" %>
+            </div>
+            <!--  <%= submit_tag("Search") %> -->
+        <% end %>
+    </div>
+</div>
+):
+1:    <!-- <%= image_tag( "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/google-play-store-apps-malware-796x450.jpg") %> -->
+2:    
+3:    <div class="input-post-wrapper" >
+4:        <div class="post-form-wrapper">
+5:            <h1 class="text-center text-uppercase" >post incredible art in armenia</h1>
+6:            <%= form_with(url: "/post", method: "get") do %>
+7:                <div class="d-flex flex-column" >
+8:                    <%= label_tag(:q, "Name") %>
+9:                    <%= text_field_tag(:q) placeholder: "Enter your name" %>
+10:                </div>
+11:                <!--  <%= submit_tag("Search") %> -->
+12:            <% end %>
+13:        </div>
+14:    </div>
+  
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tLABEL, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tLABEL, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tLABEL, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tLABEL, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tLABEL, expecting ')'
+app/views/static_pages/post.html.erb:9: syntax error, unexpected tLABEL, expecting ')'
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:22:19 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2671)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 5324)
+
+
+  
+ActionView::Template::Error (undefined method `text_field_tag' for #<ActiveSupport::SafeBuffer:0x00007fb0afcd4ff8>):
+     6:         <%= form_with(url: "/post", method: "get") do %>
+     7:             <div class="d-flex flex-column" >
+     8:                 <%= label_tag(:q, "Name") %>
+     9:                 <%= form_with.text_field_tag(:q, placeholder: "Enter your name") %>
+    10:             </div>
+    11:             <!--  <%= submit_tag("Search") %> -->
+    12:         <% end %>
+  
+app/views/static_pages/post.html.erb:9
+app/views/static_pages/post.html.erb:6
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:22:26 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 7465)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:22:52 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 266.2ms | Allocations: 162302)
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 0.1ms | Allocations: 164963)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007fb0b07b4f90>:0x00007fb0b07bd7f8>):
+     6:         <%= form_with(url: "/post", method: "get") do %>
+     7:             <div class="d-flex flex-column" >
+     8:                 <%= label_tag(:q, "Name") %>
+     9:                 <%= f.text_field_tag(:q, placeholder: "Enter your name") %>
+    10:             </div>
+    11:             <!--  <%= submit_tag("Search") %> -->
+    12:         <% end %>
+  
+app/views/static_pages/post.html.erb:9
+app/views/static_pages/post.html.erb:6
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:23:44 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 422)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 7477)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:23:50 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 363)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 422)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 7462)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:24:11 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 241.0ms | Allocations: 162305)
+Completed 500 Internal Server Error in 245ms (ActiveRecord: 0.1ms | Allocations: 164974)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007fb0b072e698>:0x00007fb0b072cb18>):
+     6:         <%= form_with(url: "/post", method: "get") do %>
+     7:             <div class="d-flex flex-column" >
+     8:                 <%= label_tag(:q, "Name") %>
+     9:                 <%= f.text_field :mother_name, :placeholder => "mother_name_autocomplete" %>
+    10:             </div>
+    11:             <!--  <%= submit_tag("Search") %> -->
+    12:         <% end %>
+  
+app/views/static_pages/post.html.erb:9
+app/views/static_pages/post.html.erb:6
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:24:23 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 231.9ms | Allocations: 162289)
+Completed 500 Internal Server Error in 235ms (ActiveRecord: 0.1ms | Allocations: 164964)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007fb0b0639a30>:0x00007fb0b0643e40>):
+     6:         <%= form_with(url: "/post", method: "get") do %>
+     7:             <div class="d-flex flex-column" >
+     8:                 <%= label_tag(:q, "Name") %>
+     9:                 <%= f.text_field :placeholder => "mother_name_autocomplete" %>
+    10:             </div>
+    11:             <!--  <%= submit_tag("Search") %> -->
+    12:         <% end %>
+  
+app/views/static_pages/post.html.erb:9
+app/views/static_pages/post.html.erb:6
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:24:32 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 238.0ms | Allocations: 162290)
+Completed 500 Internal Server Error in 242ms (ActiveRecord: 0.1ms | Allocations: 164965)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007fb0b061ba08>:0x00007fb0b0619f28>):
+     6:         <%= form_with(url: "/post", method: "get") do %>
+     7:             <div class="d-flex flex-column" >
+     8:                 <%= label_tag(:q, "Name") %>
+     9:                 <%= f.text_field placeholder: "mother_name_autocomplete" %>
+    10:             </div>
+    11:             <!--  <%= submit_tag("Search") %> -->
+    12:         <% end %>
+  
+app/views/static_pages/post.html.erb:9
+app/views/static_pages/post.html.erb:6
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:24:44 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 426)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 7489)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:25:04 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 416)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 7529)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:25:24 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 360)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 7481)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:25:32 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.5ms | Allocations: 365)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 422)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.1ms | Allocations: 7483)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:25:41 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.5ms | Allocations: 361)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 422)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 7462)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:25:56 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 370)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 7465)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:26:21 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 372)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 7475)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:27:27 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.3ms | Allocations: 167)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 5739)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:28:45 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.6ms | Allocations: 371)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 7488)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:29:02 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.8ms | Allocations: 369)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 422)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 7474)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:29:49 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.9ms | Allocations: 370)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 422)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 7479)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:30:12 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.5ms | Allocations: 374)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 422)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 7486)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:33:10 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.5ms | Allocations: 167)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 5719)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:33:44 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.4ms | Allocations: 167)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 5733)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:33:59 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.8ms | Allocations: 368)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 422)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 7477)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 18:37:24 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.2ms | Allocations: 166)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 153)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 5732)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-23 18:40:29 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PK/lIVcDkAkNh/LRFyH6NYzogt/XKrXlRScZDesK7aHYfXpF0w+iyXDqYfiZIRFi+4kZQhXwJWTYK1J9G3Jjcg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 2117)
+
+
+Started GET "/" for ::1 at 2019-12-23 18:40:29 +0400
+Processing by StaticPagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 310)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 18:40:29 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 526)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1916)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 7411)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-23 18:40:33 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 47.2ms | Allocations: 1830)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms | Allocations: 6852)
+
+
+Started GET "/" for ::1 at 2019-12-23 18:41:07 +0400
+Processing by StaticPagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 303)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 18:41:07 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5547)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 18:43:08 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 526)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1909)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 395)
+Completed 200 OK in 82ms (Views: 81.2ms | ActiveRecord: 0.0ms | Allocations: 8302)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 18:43:11 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.9ms | Allocations: 1083)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 120)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 5520)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-23 18:43:18 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Zy2zeE0uzhKYVUjWfQlJvGjj15dIV09on1QLOoztWEEMfIH0xiqRZEXwvxdBGBHB5GDDSzt7lpOy3AsxrTfS+w==", "user"=>{"email"=>"alexandr.mirz12@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in "}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "alexandr.mirz12@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 126ms (ActiveRecord: 0.2ms | Allocations: 3792)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 18:43:18 +0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1790)
+
+
+Started GET "/" for ::1 at 2019-12-23 18:43:18 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 160)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 6342)
+
+
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20191223145458)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "posts_content" text, "art_title" text, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_5b5ddfd518"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_posts_on_user_id" ON "posts" ("user_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191223145458"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2019-12-23 18:58:33 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 165)
+Completed 200 OK in 24ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 11231)
+
+
+Started GET "/" for ::1 at 2019-12-23 19:15:02 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 76)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 6.2ms | Allocations: 438)
+Completed 200 OK in 94ms (Views: 85.5ms | ActiveRecord: 0.2ms | Allocations: 13282)
+
+
+Started GET "/" for ::1 at 2019-12-23 19:15:03 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 5598)
+
+
+Started GET "/" for ::1 at 2019-12-23 19:15:04 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 153)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.1ms | Allocations: 5569)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-23 19:15:18 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.2ms | Allocations: 685)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1033)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 133)
+Completed 200 OK in 17ms (Views: 8.9ms | ActiveRecord: 0.6ms | Allocations: 11944)
+
+
+Started POST "/posts" for ::1 at 2019-12-23 19:15:21 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"F/mjbCdVvSCD4gNcr+GbHX5zAdZ2wg870HaEJ1xWRPFztTLwZgCqqW4gDBG/518GP9QKVVdyuEcd90bYyJAQQA==", "commit"=>"Create Post"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 486)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 578)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 130)
+Completed 200 OK in 57ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 9338)
+
+
+Started GET "/users/sign_out" for ::1 at 2019-12-23 19:15:37 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/users/sign_out" for ::1 at 2019-12-23 19:15:40 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2rXbcJPeQRYpByvLFgUYmjGboGPW15Mv3JhFKwLmUna++Urs0otWn8TFJIYGA9yBcDyr4PdnJFMRGYfUliAGxw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 2426)
+
+
+Started GET "/" for ::1 at 2019-12-23 19:15:40 +0400
+Processing by StaticPagesController#home as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 19:15:40 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 539)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1932)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 7438)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-23 19:15:52 +0400
+Processing by PostsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 303)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 19:15:52 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 120)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 5524)
+
+
+Started GET "/posts" for ::1 at 2019-12-23 19:16:01 +0400
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 315)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 19:16:01 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 120)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 5526)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-23 19:16:03 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 7.1ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.4ms | Allocations: 1842)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms | Allocations: 6935)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 19:16:08 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 5505)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-23 19:16:17 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"YfA+5U+Z2ngNXQsobeeoIxSYL9C2eHgCJUktfpeteUwTkn4Z2m8yvHbcMqeYtNhQiwr3wbBcpCe8YhXdmpXgog==", "user"=>{"email"=>"alexandr.mirz12@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in "}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "alexandr.mirz12@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 136ms (ActiveRecord: 0.2ms | Allocations: 3843)
+
+
+Started GET "/posts" for ::1 at 2019-12-23 19:16:17 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 890)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 134)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.2ms | Allocations: 6646)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-23 19:16:35 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 345)
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 437)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 130)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 6019)
+
+
+Started GET "/posts" for ::1 at 2019-12-23 19:16:40 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 632)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 131)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.3ms | Allocations: 6184)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-23 19:16:41 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 342)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 434)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 130)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.9ms | Allocations: 6013)
+
+
+Started GET "/posts" for ::1 at 2019-12-23 19:16:42 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 632)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 6184)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-23 19:16:42 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 342)
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 434)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 130)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 1.0ms | Allocations: 6001)
+
+
+Started GET "/posts" for ::1 at 2019-12-23 19:16:43 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 632)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 131)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.3ms | Allocations: 6190)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-23 19:16:43 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 342)
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 434)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 130)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.1ms | Allocations: 6013)
+
+
+Started GET "/posts" for ::1 at 2019-12-23 19:16:44 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 632)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 131)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 6174)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-23 19:16:45 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 342)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 434)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 130)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 6017)
+
+
+Started GET "/posts" for ::1 at 2019-12-23 19:16:46 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 632)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 6196)
+
+
+Started GET "/posts" for ::1 at 2019-12-23 19:20:21 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 860)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 8020)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-23 19:20:22 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fq8ECz4O4Ikq6FsCc7mmtt9Ybs83946eDdI5J78ULoim6H6UEugOgv274k1wKgQyd+Y7mk94rFkCrgFhp0xvjA=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 2144)
+
+
+Started GET "/" for ::1 at 2019-12-23 19:20:22 +0400
+Processing by StaticPagesController#home as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 314)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 19:20:22 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 526)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 133)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2917)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 8425)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-23 19:20:36 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1829)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 6864)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 19:20:38 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1861)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 6308)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 19:21:06 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 548)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 149)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2941)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 395)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 9324)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-23 19:21:30 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1828)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 6862)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-23 19:21:33 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 149)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 6345)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-23 19:21:41 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"MX/D7HQQ9YNZAUGpeGvEjrKGfR7hE0VOTbM+qS+q1jtj6yERoJYVtb6EELagPPTktrTTtlcvSc5wCS+raT2N+Q==", "user"=>{"email"=>"alexandr.mirz12@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in "}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "alexandr.mirz12@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 127ms (ActiveRecord: 0.2ms | Allocations: 3788)
+
+
+Started GET "/" for ::1 at 2019-12-23 19:21:41 +0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 160)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 6353)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 19:21:42 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 39.1ms | Allocations: 368)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 159)
+Completed 200 OK in 48ms (Views: 44.7ms | ActiveRecord: 0.4ms | Allocations: 6053)
+
+
+Started GET "/users/edit" for ::1 at 2019-12-23 19:21:49 +0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 41.6ms | Allocations: 1848)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 127)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.1ms | Allocations: 7633)
+
+
+Started GET "/static_pages/about" for ::1 at 2019-12-23 19:21:55 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/about"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/edit" for ::1 at 2019-12-23 19:21:58 +0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1394)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 121)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 7023)
+
+
+Started GET "/static_pages/post" for ::1 at 2019-12-23 19:22:34 +0400
+Processing by StaticPagesController#post as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering static_pages/post.html.erb within layouts/application
+  Rendered static_pages/post.html.erb within layouts/application (Duration: 0.3ms | Allocations: 167)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 159)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.1ms | Allocations: 5735)
+
+
+Started GET "/posts" for ::1 at 2019-12-23 19:22:37 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 855)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 134)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 7095)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-23 19:22:38 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 590)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 133)
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 6654)
+
+
+Started POST "/posts" for ::1 at 2019-12-23 19:22:41 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"y/19I2Ut3jmqZZowIqm8HVwqyS1wLhx+/zvwweDkjPUAEUwk0ZCS+MI2x0E+DMlr8Oh5BD/1b6rLIjGH6G1yxw==", "commit"=>"Create Post"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 475)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 567)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 130)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.1ms | Allocations: 6917)
+
+
