@@ -1,7 +1,6 @@
 <nav>
 <h1>Menu</h1>
 
-User <strong><%= current_user.email %></strong>.
 <p class="navbar-text float-right">
 <% if user_signed_in? %>
   
@@ -11,10 +10,9 @@ User <strong><%= current_user.email %></strong>.
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link ' %>
 <% end %>
 </p>
-    
-    <div>Posts</div>
-    <div>About</div>
-    <div>Edit</div>
+    <%= link_to 'Post', "/static_pages/post", :class => 'navbar-link d-flex' %> 
+    <%= link_to 'About', "/static_pages/about", :class => 'navbar-link d-flex' %> 
+  
   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link d-flex' %> 
   <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
 </nav>
