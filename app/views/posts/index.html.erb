@@ -11,6 +11,8 @@
 
   <tbody>
     <% @posts.each do |post| %>
+
+    <%= puts post %>
       <tr>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
