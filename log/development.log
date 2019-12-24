@@ -14635,3 +14635,86 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 0.9ms | Allocations: 6168)
 
 
+Started GET "/posts/new" for ::1 at 2019-12-24 18:23:14 +0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.3ms | Allocations: 2809)
+  Rendered posts/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3448)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 417)
+Completed 200 OK in 55ms (Views: 29.0ms | ActiveRecord: 1.3ms | Allocations: 29743)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-24 18:23:16 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 502)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 121)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.2ms | Allocations: 6349)
+
+
+Started GET "/users/edit" for ::1 at 2019-12-24 18:23:18 +0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 204)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3016)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 127)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 9786)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-24 18:23:20 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 505)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 599)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 124)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 6355)
+
+
+Started GET "/posts" for ::1 at 2019-12-24 18:23:21 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1660)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 134)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.5ms | Allocations: 7379)
+
+
+Started GET "/posts/15" for ::1 at 2019-12-24 18:23:32 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 253)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 134)
+Completed 200 OK in 19ms (Views: 10.6ms | ActiveRecord: 0.6ms | Allocations: 6593)
+
+
+Started GET "/posts" for ::1 at 2019-12-24 18:23:36 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1374)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 20ms (Views: 14.4ms | ActiveRecord: 0.3ms | Allocations: 6942)
+
+
