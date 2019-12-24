@@ -50,14 +50,12 @@ $color: red;
     background: linear-gradient(90deg, rgba(156,159,171,0.9864320728291317) 26%, rgba(116,133,158,1) 52%, rgba(37,61,73,1) 97%);
     
 }
-.b{
+.border-shape{
     border-radius:5px;
 }
 
 .link-to-back{
     background-color: white;
-    height: 70vh;
-    width:30vh;
-    border-radius: 10px;
-    border-width: 10px;
+    color:black;
+    margin:0 auto;
 }
