@@ -1,6 +1,10 @@
-<h1>Editing Post</h1>
+<div class="d-flex flex-column justify-content-center text-center edit-posts">
+<h1 class="pb-3">Editing Post</h1>
 
 <%= render 'form', post: @post %>
 
-<%= link_to 'Show', @post %> |
-<%= link_to 'Back', posts_path %>
+<div class="pt-3">
+<%= link_to 'Show', @post,:class=>'text-decoration-none  co-lor'%> |
+<%= link_to 'Back', posts_path,:class=>'text-decoration-none  co-lor'%>
+</div>
+</div>

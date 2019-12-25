@@ -11,16 +11,16 @@
     </div>
   <% end %>
 
-  <div class="m-auto w-50" >
+  <div class="m-auto w-50 pt-3 text-left" >
       <%= label_tag(:for_art_name, "Art name", id: "asd") %>
       <%= form.text_field :art_title, placeholder: 'Enter art name', class: "form-control", id: "for_art_name" %>
   </div>
-  <div class="m-auto w-50" >
+  <div class="m-auto w-50 pt-4 text-left " >
       <%= label_tag(:for_art_place, "Art place") %>
-      <%= form.text_field :posts_content, placeholder: 'Enter art place', class: "form-control", id: "for_art_place" %>
+      <%= form.text_field :posts_content, placeholder: 'Enter art place', class: "form-control ", id: "for_art_place" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions justify-content-center d-flex pt-5 update-post" >
+    <%= form.submit%>
   </div>
 <% end %>
