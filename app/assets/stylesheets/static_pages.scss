@@ -53,4 +53,19 @@ $color: red;
 }
 .update-post input{
     border-radius:5px;
+.back{
+    height:1001px;
+    padding:60px;
+    background: rgb(156,159,171);
+    background: linear-gradient(90deg, rgba(156,159,171,0.9864320728291317) 26%, rgba(116,133,158,1) 52%, rgba(37,61,73,1) 97%);
+    
+}
+.border-shape{
+    border-radius:5px;
+}
+
+.link-to-back{
+    background-color: white;
+    color:black;
+    margin:0 auto;
 }
