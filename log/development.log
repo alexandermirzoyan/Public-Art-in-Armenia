@@ -15416,3 +15416,1910 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 6170)
 
 
+Started GET "/posts/new" for ::1 at 2019-12-25 16:07:13 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 497)
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 589)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 121)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 6354)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 16:07:38 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.5ms | Allocations: 830)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1186)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 396)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 8506)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 16:07:42 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 502)
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 594)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 121)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 6323)
+
+
+Started POST "/posts" for ::1 at 2019-12-25 16:07:48 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"9JAeUr8zI162byfwh+ExelHvtYECoFVvb0oaQaVKY3WyILUrz66NPY7a3vBxDOapNPuEoc4isLaTiNPFyl400g==", "post"=>{"art_title"=>"", "posts_content"=>""}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("posts_content", "art_title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["posts_content", ""], ["art_title", ""], ["user_id", 3], ["created_at", "2019-12-25 12:07:48.544181"], ["updated_at", "2019-12-25 12:07:48.544181"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+Redirected to http://localhost:3000/posts/19
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms | Allocations: 4204)
+
+
+Started GET "/posts/19" for ::1 at 2019-12-25 16:07:48 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 134)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 6516)
+
+
+Started GET "/posts/19/edit" for ::1 at 2019-12-25 16:07:49 +0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 549)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 801)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 133)
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 0.8ms | Allocations: 7042)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:07:50 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1880)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 134)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 7578)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:07:55 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1350)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 6900)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:09:31 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1350)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 6895)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:12:27 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 9065)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:14:29 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1940)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 9087)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:14:35 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1929)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 406)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 9062)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:15:20 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1356)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 6921)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:15:21 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 9087)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:15:21 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1355)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 6911)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:15:21 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1351)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 6912)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 16:15:51 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.3ms | Allocations: 830)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 124)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 7048)
+
+
+Started POST "/posts" for ::1 at 2019-12-25 16:15:52 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"L154eWNsD/deltHT/LslilX5O2IIl/hhlATThA2F4f5aKK8fjiYDsIeeRYXbOK7oMWnk3vabpf2Novqo+lilxg==", "post"=>{"art_title"=>"", "posts_content"=>""}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("posts_content", "art_title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["posts_content", ""], ["art_title", ""], ["user_id", 3], ["created_at", "2019-12-25 12:15:52.250335"], ["updated_at", "2019-12-25 12:15:52.250335"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+Redirected to http://localhost:3000/posts/20
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms | Allocations: 4226)
+
+
+Started GET "/posts/20" for ::1 at 2019-12-25 16:15:52 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 134)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 6500)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:15:53 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1594)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 7150)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:15:56 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 7151)
+
+
+Started DELETE "/posts/17" for ::1 at 2019-12-25 16:16:01 +0400
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZE2Ga/6onsbJkPtL5mIF5EvW8Xxl0Oj+l+mybIthOeYi/S0SjjUwpfElAksQj9I3LsLAXKlSDSdrK3vo5HVuQQ==", "id"=>"17"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:58:in `destroy'
+  [1m[36mPost Destroy (33.1ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/posts_controller.rb:58:in `destroy'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:58:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 41ms (ActiveRecord: 34.5ms | Allocations: 4772)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:16:01 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 131)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.2ms | Allocations: 6935)
+
+
+Started DELETE "/posts/18" for ::1 at 2019-12-25 16:16:04 +0400
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ujVDjqSI0LJ7F4KCMnJBLKyyi0gu1aBxQTo9DK7umvH8hej31BV+0UOie4LEn5b/yaa6aOJXRai9+PSIwfrNVg==", "id"=>"18"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:58:in `destroy'
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 18]]
+  ↳ app/controllers/posts_controller.rb:58:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:58:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms | Allocations: 4064)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:16:04 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 6698)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:22:20 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3801)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms | Allocations: 6534)
+
+
+  
+ActionView::Template::Error (undefined method `post_title' for #<Post::ActiveRecord_Relation:0x00007fc30d312b80>):
+    47:                 <div class="card-body">
+    48: 
+    49:                     <!--Title-->
+    50:                     <h4 class="card-title"><%@posts.post_title%></h4>
+    51:                     <!--Text-->
+    52:                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    53:                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+  
+app/views/posts/index.html.erb:50
+app/views/posts/index.html.erb:33
+Started GET "/posts" for ::1 at 2019-12-25 16:22:28 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3758)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 6461)
+
+
+  
+ActionView::Template::Error (undefined method `post_title' for #<Post::ActiveRecord_Relation:0x00007fc30cdd50c8>):
+    47:                 <div class="card-body">
+    48: 
+    49:                     <!--Title-->
+    50:                     <h4 class="card-title"><%= @posts.post_title%></h4>
+    51:                     <!--Text-->
+    52:                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    53:                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+  
+app/views/posts/index.html.erb:50
+app/views/posts/index.html.erb:33
+Started GET "/posts" for ::1 at 2019-12-25 16:22:35 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1484)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 4188)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice">
+    <%= notice %>
+</p>
+
+<h1>Posts</h1>
+
+<!-- <table>
+    <thead>
+        <tr>
+            <th colspan="3"></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @posts.each do |post| %>
+            <%= puts post %>
+            <tr>
+                <td>
+                    <%= link_to 'Show', post %>
+                </td>
+                <td>
+                    <%= link_to 'Edit', edit_post_path(post) %>
+                </td>
+                <td>
+                    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </td>
+            </tr>
+          <% end %>
+    </tbody>
+</table> -->
+
+<div class="d-flex" >
+    <% @posts.each do |post| %>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Card -->
+            <div class="card">
+
+                <!--Card image-->
+                <div class="view overlay">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+                    <a href="#!">
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+
+                <!--Card content-->
+                <div class="card-body">
+
+                    <!--Title-->
+                    <h4 class="card-title"><%%></h4>
+                    <!--Text-->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                    <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+                </div>
+
+            </div>
+            <!-- Card -->
+        </div>
+    <% end %>
+</div>
+
+<h1>-------------</h1>
+
+<div class="art-list-wrapper">
+    <% @posts.each do |post| %>
+
+        <%= puts post %>
+            <div class="art-list-item-wrapper">
+                <p>
+                    <%= post.posts_content %>
+                </p>
+            </div>
+            <tr>
+                <td>
+                    <%= link_to 'Show', post %>
+                </td>
+                <td>
+                    <%= link_to 'Edit', edit_post_path(post) %>
+                </td>
+                <td>
+                    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </td>
+            </tr>
+    <% end %>
+</div>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>
+
+    <div class="container">
+
+        <!-- Card deck -->
+        <div class="card-deck row">
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <!-- Card -->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!--Title-->
+                        <h4 class="card-title">1 Card title</h4>
+                        <!--Text-->
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <!-- Card -->
+                <div class="card mb-4">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!--Title-->
+                        <h4 class="card-title">2 Card title</h4>
+                        <!--Text-->
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <!-- Card -->
+                <div class="card mb-4">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!--Title-->
+                        <h4 class="card-title">3 Card title</h4>
+                        <!--Text-->
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+):
+1:    <p id="notice">
+2:        <%= notice %>
+3:    </p>
+4:    
+5:    <h1>Posts</h1>
+6:    
+7:    <!-- <table>
+8:        <thead>
+9:            <tr>
+10:                <th colspan="3"></th>
+11:            </tr>
+12:        </thead>
+13:    
+14:        <tbody>
+15:            <% @posts.each do |post| %>
+16:                <%= puts post %>
+17:                <tr>
+18:                    <td>
+19:                        <%= link_to 'Show', post %>
+20:                    </td>
+21:                    <td>
+22:                        <%= link_to 'Edit', edit_post_path(post) %>
+23:                    </td>
+24:                    <td>
+25:                        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+26:                    </td>
+27:                </tr>
+28:              <% end %>
+29:        </tbody>
+30:    </table> -->
+31:    
+32:    <div class="d-flex" >
+33:        <% @posts.each do |post| %>
+34:            <div class="col-xs-12 col-sm-6 col-md-4">
+35:                <!-- Card -->
+36:                <div class="card">
+37:    
+38:                    <!--Card image-->
+39:                    <div class="view overlay">
+40:                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+41:                        <a href="#!">
+42:                            <div class="mask rgba-white-slight"></div>
+43:                        </a>
+44:                    </div>
+45:    
+46:                    <!--Card content-->
+47:                    <div class="card-body">
+48:    
+49:                        <!--Title-->
+50:                        <h4 class="card-title"><%%></h4>
+51:                        <!--Text-->
+52:                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+53:                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+54:                        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+55:    
+56:                    </div>
+57:    
+58:                </div>
+59:                <!-- Card -->
+60:            </div>
+61:        <% end %>
+62:    </div>
+63:    
+64:    <h1>-------------</h1>
+65:    
+66:    <div class="art-list-wrapper">
+67:        <% @posts.each do |post| %>
+68:    
+69:            <%= puts post %>
+70:                <div class="art-list-item-wrapper">
+71:                    <p>
+72:                        <%= post.posts_content %>
+73:                    </p>
+74:                </div>
+75:                <tr>
+76:                    <td>
+77:                        <%= link_to 'Show', post %>
+78:                    </td>
+79:                    <td>
+80:                        <%= link_to 'Edit', edit_post_path(post) %>
+81:                    </td>
+82:                    <td>
+83:                        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+84:                    </td>
+85:                </tr>
+86:        <% end %>
+87:    </div>
+88:    
+89:    <br>
+90:    
+91:    <%= link_to 'New Post', new_post_path %>
+92:    
+93:        <div class="container">
+94:    
+95:            <!-- Card deck -->
+96:            <div class="card-deck row">
+97:    
+98:                <div class="col-xs-12 col-sm-6 col-md-4">
+99:                    <!-- Card -->
+100:                    <div class="card">
+101:    
+102:                        <!--Card image-->
+103:                        <div class="view overlay">
+104:                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+105:                            <a href="#!">
+106:                                <div class="mask rgba-white-slight"></div>
+107:                            </a>
+108:                        </div>
+109:    
+110:                        <!--Card content-->
+111:                        <div class="card-body">
+112:    
+113:                            <!--Title-->
+114:                            <h4 class="card-title">1 Card title</h4>
+115:                            <!--Text-->
+116:                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+117:                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+118:                            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+119:    
+120:                        </div>
+121:    
+122:                    </div>
+123:                    <!-- Card -->
+124:                </div>
+125:    
+126:                <div class="col-xs-12 col-sm-6 col-md-4">
+127:                    <!-- Card -->
+128:                    <div class="card mb-4">
+129:    
+130:                        <!--Card image-->
+131:                        <div class="view overlay">
+132:                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap">
+133:                            <a href="#!">
+134:                                <div class="mask rgba-white-slight"></div>
+135:                            </a>
+136:                        </div>
+137:    
+138:                        <!--Card content-->
+139:                        <div class="card-body">
+140:    
+141:                            <!--Title-->
+142:                            <h4 class="card-title">2 Card title</h4>
+143:                            <!--Text-->
+144:                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+145:                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+146:                            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+147:    
+148:                        </div>
+149:    
+150:                    </div>
+151:                    <!-- Card -->
+152:                </div>
+153:    
+154:                <div class="col-xs-12 col-sm-6 col-md-4">
+155:                    <!-- Card -->
+156:                    <div class="card mb-4">
+157:    
+158:                        <!--Card image-->
+159:                        <div class="view overlay">
+160:                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap">
+161:                            <a href="#!">
+162:                                <div class="mask rgba-white-slight"></div>
+163:                            </a>
+164:                        </div>
+165:    
+166:                        <!--Card content-->
+167:                        <div class="card-body">
+168:    
+169:                            <!--Title-->
+170:                            <h4 class="card-title">3 Card title</h4>
+171:                            <!--Text-->
+172:                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+173:                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+174:                            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+175:    
+176:                        </div>
+177:    
+178:                    </div>
+179:                    <!-- Card -->
+180:                </div>
+  
+app/views/posts/index.html.erb:182: syntax error, unexpected end-of-input, expecting end
+app/views/posts/index.html.erb:182: syntax error, unexpected end-of-input, expecting end
+app/views/posts/index.html.erb:182: syntax error, unexpected end-of-input, expecting end
+app/views/posts/index.html.erb:182: syntax error, unexpected end-of-input, expecting end
+app/views/posts/index.html.erb:182: syntax error, unexpected end-of-input, expecting end
+app/views/posts/index.html.erb:182: syntax error, unexpected end-of-input, expecting end
+Started GET "/posts" for ::1 at 2019-12-25 16:22:45 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1714)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.3ms | Allocations: 8854)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:22:51 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1717)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 8852)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:26:00 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.3ms | Allocations: 6699)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:26:23 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1794)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 406)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 8947)
+
+
+Started GET "/posts/19" for ::1 at 2019-12-25 16:26:25 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 134)
+Completed 200 OK in 21ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 6495)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:26:26 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1179)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 6735)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:26:34 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1793)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 8933)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:26:40 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 8929)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:26:53 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1796)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 8933)
+
+
+Started GET "/posts/19" for ::1 at 2019-12-25 16:26:54 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 134)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 6466)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:28:23 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1784)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 8913)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:28:26 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 6741)
+
+
+Started DELETE "/posts/19" for ::1 at 2019-12-25 16:28:29 +0400
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"W6+EeA5o+btBeVUfLS+i80TU0rcP1LTRwKEAYTMdQ8UdHy8BfvVX2HnMrB/bwnUgIcDjl8NWUQg8Y8nlXAkUYg==", "id"=>"19"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:58:in `destroy'
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 19]]
+  ↳ app/controllers/posts_controller.rb:58:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:58:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms | Allocations: 4038)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:28:29 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 906)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 6484)
+
+
+Started DELETE "/posts/20" for ::1 at 2019-12-25 16:28:31 +0400
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aiQRyD1K1jziIvg40KpLTitBOlTO1AUohXcVOc+q1iAslLqxTdd4X9qXATgmR5ydTlULdAJW4PF5tdy9oL6Bhw==", "id"=>"20"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:58:in `destroy'
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 20]]
+  ↳ app/controllers/posts_controller.rb:58:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:58:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms | Allocations: 4064)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:28:31 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 636)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 131)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 6204)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:28:46 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 8274)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 16:28:49 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.6ms | Allocations: 830)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1180)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 124)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 7056)
+
+
+Started POST "/posts" for ::1 at 2019-12-25 16:29:13 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"bsjxYwgTciXL9JrJ15NeLHni5eqvOQH5W1Lov0k5JqEbviYF5Vl+YhL8Dp/wENVOHXI6VlE1XGVC9MGTvuRimQ==", "post"=>{"art_title"=>"Cascade Hills", "posts_content"=>"Yerevan, Armenia"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("posts_content", "art_title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["posts_content", "Yerevan, Armenia"], ["art_title", "Cascade Hills"], ["user_id", 3], ["created_at", "2019-12-25 12:29:13.167187"], ["updated_at", "2019-12-25 12:29:13.167187"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+Redirected to http://localhost:3000/posts/21
+Completed 302 Found in 8ms (ActiveRecord: 1.6ms | Allocations: 4197)
+
+
+Started GET "/posts/21" for ::1 at 2019-12-25 16:29:13 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 134)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 6510)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:29:15 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 6455)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:29:56 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 904)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 6457)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:29:58 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 3829)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms | Allocations: 6541)
+
+
+  
+ActionView::Template::Error (undefined method `posts_title' for #<Post:0x00007fc30fad8ea8>
+Did you mean?  posts_content):
+    41:                 </div>
+    42: 
+    43:                 <div class="card-body">
+    44:                     <h4 class="card-title"><%= post.posts_title %></h4>
+    45:                     
+    46:                     <p class="card-text"> <%= post.posts_content%> </p>
+    47:                     
+  
+app/views/posts/index.html.erb:44
+app/views/posts/index.html.erb:33
+Started GET "/posts" for ::1 at 2019-12-25 16:29:59 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 3277)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 5147)
+
+
+  
+ActionView::Template::Error (undefined method `posts_title' for #<Post:0x00007fc30f8971f8>
+Did you mean?  posts_content):
+    41:                 </div>
+    42: 
+    43:                 <div class="card-body">
+    44:                     <h4 class="card-title"><%= post.posts_title %></h4>
+    45:                     
+    46:                     <p class="card-text"> <%= post.posts_content%> </p>
+    47:                     
+  
+app/views/posts/index.html.erb:44
+app/views/posts/index.html.erb:33
+Started GET "/posts" for ::1 at 2019-12-25 16:30:02 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 3821)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms | Allocations: 6538)
+
+
+  
+ActionView::Template::Error (undefined method `posts_titel' for #<Post:0x00007fc30ce57258>
+Did you mean?  posts_content):
+    41:                 </div>
+    42: 
+    43:                 <div class="card-body">
+    44:                     <h4 class="card-title"><%= post.posts_titel %></h4>
+    45:                     
+    46:                     <p class="card-text"> <%= post.posts_content%> </p>
+    47:                     
+  
+app/views/posts/index.html.erb:44
+app/views/posts/index.html.erb:33
+Started GET "/posts" for ::1 at 2019-12-25 16:30:03 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3276)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms | Allocations: 5146)
+
+
+  
+ActionView::Template::Error (undefined method `posts_titel' for #<Post:0x00007fc30d4036e8>
+Did you mean?  posts_content):
+    41:                 </div>
+    42: 
+    43:                 <div class="card-body">
+    44:                     <h4 class="card-title"><%= post.posts_titel %></h4>
+    45:                     
+    46:                     <p class="card-text"> <%= post.posts_content%> </p>
+    47:                     
+  
+app/views/posts/index.html.erb:44
+app/views/posts/index.html.erb:33
+Started GET "/posts" for ::1 at 2019-12-25 16:30:07 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3778)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.3ms | Allocations: 6497)
+
+
+  
+ActionView::Template::Error (undefined method `posts_titel' for #<Post:0x00007fc30cae5b60>
+Did you mean?  posts_content):
+    41:                 </div>
+    42: 
+    43:                 <div class="card-body">
+    44:                     <h4 class="card-title"><%= post.posts_titel %></h4>
+    45:                     
+    46:                     
+    47:                     <%= link_to 'Show More', post %>
+  
+app/views/posts/index.html.erb:44
+app/views/posts/index.html.erb:33
+Started GET "/posts" for ::1 at 2019-12-25 16:30:13 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1404)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 411)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.2ms | Allocations: 8566)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:30:20 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 3775)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms | Allocations: 6481)
+
+
+  
+ActionView::Template::Error (undefined method `posts_title' for #<Post:0x00007fc30cdbc5a0>
+Did you mean?  posts_content):
+    41:                 </div>
+    42: 
+    43:                 <div class="card-body">
+    44:                     <h4 class="card-title"><%= post.posts_title %></h4>
+    45:                     
+    46:                     <p class="card-text">  </p>
+    47:                     
+  
+app/views/posts/index.html.erb:44
+app/views/posts/index.html.erb:33
+Started GET "/posts" for ::1 at 2019-12-25 16:30:24 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 3777)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms | Allocations: 6482)
+
+
+  
+ActionView::Template::Error (undefined method `posts_titel' for #<Post:0x00007fc30cddf8c0>
+Did you mean?  posts_content):
+    41:                 </div>
+    42: 
+    43:                 <div class="card-body">
+    44:                     <h4 class="card-title"><%= post.posts_titel %></h4>
+    45:                     
+    46:                     <p class="card-text">  </p>
+    47:                     
+  
+app/views/posts/index.html.erb:44
+app/views/posts/index.html.erb:33
+Started GET "/posts" for ::1 at 2019-12-25 16:30:25 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3275)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms | Allocations: 5133)
+
+
+  
+ActionView::Template::Error (undefined method `posts_titel' for #<Post:0x00007fc30cdf9108>
+Did you mean?  posts_content):
+    41:                 </div>
+    42: 
+    43:                 <div class="card-body">
+    44:                     <h4 class="card-title"><%= post.posts_titel %></h4>
+    45:                     
+    46:                     <p class="card-text">  </p>
+    47:                     
+  
+app/views/posts/index.html.erb:44
+app/views/posts/index.html.erb:33
+Started GET "/posts" for ::1 at 2019-12-25 16:30:32 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1403)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 8545)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/posts" for ::1 at 2019-12-25 16:31:42 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1419)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 8558)
+
+
+Started GET "/posts/21" for ::1 at 2019-12-25 16:31:45 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 134)
+Completed 200 OK in 11ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 6469)
+
+
+Started GET "/posts/21" for ::1 at 2019-12-25 16:31:55 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 1.0ms | Allocations: 6157)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:34:05 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1369)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 8498)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:34:21 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1372)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 8511)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:34:32 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1372)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 8511)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:35:01 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1274)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 8407)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:35:30 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1039)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 8185)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:35:55 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1033)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 8174)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:36:15 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1036)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 8171)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:36:26 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1041)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 8180)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:36:56 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1032)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 8171)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 16:37:22 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.5ms | Allocations: 830)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1180)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 124)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 7040)
+
+
+Started POST "/posts" for ::1 at 2019-12-25 16:37:42 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"UfA8U5vGSfNclf7Rt78GOhPBPA4oBPJ9dj/flEBMApIkhus1doxFtIWdaoeQPI1Yd1HjstYIr+Fvmfa4t5FGqg==", "post"=>{"art_title"=>"Blue Pig", "posts_content"=>"Yerevan, Armenia"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("posts_content", "art_title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["posts_content", "Yerevan, Armenia"], ["art_title", "Blue Pig"], ["user_id", 3], ["created_at", "2019-12-25 12:37:42.054021"], ["updated_at", "2019-12-25 12:37:42.054021"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+Redirected to http://localhost:3000/posts/22
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms | Allocations: 4199)
+
+
+Started GET "/posts/22" for ::1 at 2019-12-25 16:37:42 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 134)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 6478)
+
+
+Started GET "/posts/22" for ::1 at 2019-12-25 16:37:47 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 6175)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:37:49 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 889)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 6442)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 16:37:51 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 499)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 121)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 6313)
+
+
+Started POST "/posts" for ::1 at 2019-12-25 16:37:52 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"zEXYrqeBf2F9K4MX0z09oAEWY744p1Otv9zYHSOJ9xa5Mw/ISstzJqQjF0H0vrbCZYa8AsarDjGmevEx1FSzLg==", "post"=>{"art_title"=>"", "posts_content"=>""}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("posts_content", "art_title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["posts_content", ""], ["art_title", ""], ["user_id", 3], ["created_at", "2019-12-25 12:37:52.017115"], ["updated_at", "2019-12-25 12:37:52.017115"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+Redirected to http://localhost:3000/posts/23
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms | Allocations: 4188)
+
+
+Started GET "/posts/23" for ::1 at 2019-12-25 16:37:52 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 131)
+Completed 200 OK in 20ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 6191)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:37:53 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1013)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 131)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 6556)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 16:37:54 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 497)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 589)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 121)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 6315)
+
+
+Started POST "/posts" for ::1 at 2019-12-25 16:37:55 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"pucyjkj5np2nF/GT2yiXrVUTScO70E/WuCBhLMDuhD/TkeXopbOS2n4fZcX8qxzPMYOWf0XcEkqhhkgANzPABw==", "post"=>{"art_title"=>"", "posts_content"=>""}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("posts_content", "art_title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["posts_content", ""], ["art_title", ""], ["user_id", 3], ["created_at", "2019-12-25 12:37:55.560955"], ["updated_at", "2019-12-25 12:37:55.560955"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+Redirected to http://localhost:3000/posts/24
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms | Allocations: 4189)
+
+
+Started GET "/posts/24" for ::1 at 2019-12-25 16:37:55 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 6199)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:37:56 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 131)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.4ms | Allocations: 6730)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 16:37:59 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 497)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 589)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 121)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 6313)
+
+
+Started POST "/posts" for ::1 at 2019-12-25 16:37:59 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"pStUteKt/CWJxAOSc/aHk5Ba62Jkqa2Otan/Fndz4FbQXYPTD+fwYlDMl8RUdQzx9Mo03pql8BKsD9Y6gK6kbg==", "post"=>{"art_title"=>"", "posts_content"=>""}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("posts_content", "art_title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["posts_content", ""], ["art_title", ""], ["user_id", 3], ["created_at", "2019-12-25 12:37:59.968126"], ["updated_at", "2019-12-25 12:37:59.968126"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+Redirected to http://localhost:3000/posts/25
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms | Allocations: 4217)
+
+
+Started GET "/posts/25" for ::1 at 2019-12-25 16:37:59 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 6175)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:38:00 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1268)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 6827)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 16:38:01 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 497)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 589)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 121)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 6317)
+
+
+Started POST "/posts" for ::1 at 2019-12-25 16:38:02 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"Wlx362uokQ3qntkiEDRekZnsa/cgrAuDlpt1DNlh9ggvKqCNhuKdSjOWTXQ3t9Xz/Xy0S96gVh+PPVwgLryyMA==", "post"=>{"art_title"=>"", "posts_content"=>""}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("posts_content", "art_title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["posts_content", ""], ["art_title", ""], ["user_id", 3], ["created_at", "2019-12-25 12:38:02.713303"], ["updated_at", "2019-12-25 12:38:02.713303"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+Redirected to http://localhost:3000/posts/26
+Completed 302 Found in 7ms (ActiveRecord: 1.6ms | Allocations: 4195)
+
+
+Started GET "/posts/26" for ::1 at 2019-12-25 16:38:02 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 8233)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:38:03 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1395)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 6936)
+
+
+Started GET "/posts/23/edit" for ::1 at 2019-12-25 16:38:09 +0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 549)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.7ms | Allocations: 804)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 133)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 7040)
+
+
+Started PATCH "/posts/23" for ::1 at 2019-12-25 16:38:13 +0400
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"h4BIA/lw98tFYwFjGv8+ZycTY/fQ0GNYNIGRo9VDSviIb8vlha7v13YGkPwUBdOLt7xSw0iDgdVuZxFNoh6JLA==", "post"=>{"art_title"=>"Cascade Hills", "posts_content"=>"Test"}, "commit"=>"Update Post", "id"=>"23"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE "posts" SET "posts_content" = ?, "art_title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["posts_content", "Test"], ["art_title", "Cascade Hills"], ["updated_at", "2019-12-25 12:38:13.389787"], ["id", 23]]
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+Redirected to http://localhost:3000/posts/23
+Completed 302 Found in 9ms (ActiveRecord: 1.8ms | Allocations: 6006)
+
+
+Started GET "/posts/23" for ::1 at 2019-12-25 16:38:13 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 6184)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:38:14 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1396)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 6965)
+
+
+Started GET "/posts/24/edit" for ::1 at 2019-12-25 16:38:18 +0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 541)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 663)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 130)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 6750)
+
+
+Started PATCH "/posts/24" for ::1 at 2019-12-25 16:38:24 +0400
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"46lTbZ83OxCztF/MSp9dlPupoUdlmuSbejN3xCm+Tl+Lf0yDoy8nWop26ZxE1AOMr6XC5eVdgTYa3iEYlrC54w==", "post"=>{"art_title"=>"Test", "posts_content"=>"Art Place"}, "commit"=>"Update Post", "id"=>"24"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE "posts" SET "posts_content" = ?, "art_title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["posts_content", "Art Place"], ["art_title", "Test"], ["updated_at", "2019-12-25 12:38:24.582523"], ["id", 24]]
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+Redirected to http://localhost:3000/posts/24
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms | Allocations: 5819)
+
+
+Started GET "/posts/24" for ::1 at 2019-12-25 16:38:24 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.2ms | Allocations: 8219)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:38:26 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1395)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 6959)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:38:44 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1671)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 8803)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:38:51 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1668)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 8795)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:38:54 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1668)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.3ms | Allocations: 8815)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:38:57 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1667)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 406)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 8790)
+
+
+Started GET "/posts/25/edit" for ::1 at 2019-12-25 16:39:07 +0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.6ms | Allocations: 874)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1271)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 133)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.3ms | Allocations: 7500)
+
+
+Started PATCH "/posts/25" for ::1 at 2019-12-25 16:39:12 +0400
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"0LNG0jkCpyBz7BKvnxqBzBdAQdWDg4fWk7kPlc4HTx3HZpjtd2F/uRd6Z6TPYQmrMcILzZACh3k6al9402qWfA==", "post"=>{"art_title"=>"Test23", "posts_content"=>"123"}, "commit"=>"Update Post", "id"=>"25"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE "posts" SET "posts_content" = ?, "art_title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["posts_content", "123"], ["art_title", "Test23"], ["updated_at", "2019-12-25 12:39:12.605281"], ["id", 25]]
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+Redirected to http://localhost:3000/posts/25
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms | Allocations: 5807)
+
+
+Started GET "/posts/25" for ::1 at 2019-12-25 16:39:12 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 134)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 6502)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:39:13 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1398)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 131)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 6950)
+
+
+Started GET "/posts/26/edit" for ::1 at 2019-12-25 16:39:19 +0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 543)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 665)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 130)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 6758)
+
+
+Started PATCH "/posts/26" for ::1 at 2019-12-25 16:39:25 +0400
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"oX1qg9R+78UdoUyc5RWP8Jwbe5Bzz92Aje5IIb3j+pH9yeIzPkObgjoBTcaWRSUoC+J62lLSYpB4ewmnQuwODQ==", "post"=>{"art_title"=>"Test2389", "posts_content"=>"123123123"}, "commit"=>"Update Post", "id"=>"26"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE "posts" SET "posts_content" = ?, "art_title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["posts_content", "123123123"], ["art_title", "Test2389"], ["updated_at", "2019-12-25 12:39:25.209351"], ["id", 26]]
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `block in update'
+Redirected to http://localhost:3000/posts/26
+Completed 302 Found in 9ms (ActiveRecord: 1.5ms | Allocations: 5799)
+
+
+Started GET "/posts/26" for ::1 at 2019-12-25 16:39:25 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 6181)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:39:25 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1395)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 131)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 6942)
+
+
