@@ -24,6 +24,10 @@
         <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Repeat your password", class: "email w-50 rounded p-2" %>
       </div>
 
+      <div class="field mb-3 d-flex justify-content-center">
+        <%= f.file_field :avatar %>
+      </div>
+
       <div class="actions w-50 rounded m-auto d-flex justify-content-center ">
         <%= f.submit "Sign up", class: "w-100 p-2 sign-up-button" %>
       </div>
