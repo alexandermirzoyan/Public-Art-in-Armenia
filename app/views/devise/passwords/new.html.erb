@@ -16,20 +16,20 @@
 <%= render "devise/shared/links" %>
 -->
 
-<div class="forgot-pass-wraper">
-<div class="container d-flex flex-column justify-content-around forgot-input-wraper w-50 m-auto ">
-<h2 class="text-white">Forgot your password?</h2>
+<div class="forgot-password-wrapper">
+<div class="container d-flex flex-column justify-content-around forgot-input-wrapper w-50 m-auto p-5">
+<h2>Forgot your password?</h2>
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="field d-flex flex-column align-items-center mb-5">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "w-75" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
+    <%= f.submit "Send me reset password instructions", class:'text-decoration-none p-2 sign-up-button actions w-75 rounded m-auto d-flex justify-content-center' %>
   </div>
  
 <% end %>
