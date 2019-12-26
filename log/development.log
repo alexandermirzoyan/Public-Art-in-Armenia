@@ -22353,3 +22353,122 @@ Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 907
   [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/users/sign_in" for ::1 at 2019-12-26 18:55:35 +0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+Started GET "/users/sign_in" for ::1 at 2019-12-26 18:55:35 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 654)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 149)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 149)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 59.3ms | Allocations: 7672)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 112.7ms | Allocations: 14447)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 454)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 557)
+Completed 200 OK in 254ms (Views: 252.5ms | ActiveRecord: 0.0ms | Allocations: 34437)
+
+
+Completed 200 OK in 353ms (Views: 328.1ms | ActiveRecord: 0.6ms | Allocations: 49254)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-26 18:55:47 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"HXVkl3NaSWHsSFT7Akd5wBsM5qJaxoesk0QtNQJGD+CdcCVD00sMX3DTUydsjdmV3odvL8stPNQPDhq4qPC7Vw==", "user"=>{"email"=>"alexandr.mirz12@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in "}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "alexandr.mirz12@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 140ms (ActiveRecord: 0.2ms | Allocations: 3049)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"HXVkl3NaSWHsSFT7Akd5wBsM5qJaxoesk0QtNQJGD+CdcCVD00sMX3DTUydsjdmV3odvL8stPNQPDhq4qPC7Vw==", "user"=>{"email"=>"alexandr.mirz12@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in "}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 149)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1897)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 76)
+Completed 200 OK in 129ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 6314)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-26 18:55:50 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"UUgAVkok3TXUBQv4OzZ42ktNyMXp6bh64egJPgZo1kjRTUGC6jWYC0ieDCRV/NiPjsZBSHgCAwJ9oj6zrN5i/w==", "user"=>{"email"=>"alexandr.mirz12@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in "}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "alexandr.mirz12@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 131ms (ActiveRecord: 0.2ms | Allocations: 4203)
+
+
+Started GET "/" for ::1 at 2019-12-26 18:55:50 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 5763)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 136)
+Completed 200 OK in 47ms (Views: 22.7ms | ActiveRecord: 1.5ms | Allocations: 12832)
+
+
+Started GET "/" for ::1 at 2019-12-26 18:56:47 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1673)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 410)
+Completed 200 OK in 32ms (Views: 27.8ms | ActiveRecord: 0.2ms | Allocations: 8942)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-26 18:56:51 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lJqdq/CYZPUWRpjNd5XnH6GgyfESzW4ZakLRvyrtLFwpxgYFFCI6x5LdmO5FXe162AOoCe7dU3Y1gl0VR28oUQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 55ms (ActiveRecord: 0.1ms | Allocations: 5572)
+
+
+Started GET "/" for ::1 at 2019-12-26 18:56:51 +0400
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 304)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-26 18:56:51 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 545)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 149)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2943)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 8551)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-26 18:57:04 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"o4U2giFzUooPSSd6Bip+sEIPU70MOj5bKURhN+/qcw+oLzg2iqxisjDmnrzP3zCzNyVFapdwHIdiLDhLbX8UMw==", "user"=>{"email"=>"alexandr.mirz12@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in "}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "alexandr.mirz12@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 126ms (ActiveRecord: 0.1ms | Allocations: 3775)
+
+
+Started GET "/" for ::1 at 2019-12-26 18:57:04 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1405)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 134)
+Completed 200 OK in 18ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 7073)
+
+
