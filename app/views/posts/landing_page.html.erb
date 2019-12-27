@@ -1,0 +1,29 @@
+<!-- <p id="notice">
+    <%= notice %>
+</p>
+-->
+
+<h1>Posts</h1>
+
+<div class="container" >
+    <div class="row" >
+        <% @posts.each do |post| %>
+            <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <div class="view overlay">
+                        <%= image_tag post_image(post), size: '200x200', class: 'rounded-circle mx-auto d-block' %> 
+                        <!-- <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap"> -->
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title"><%= post.art_title %></h4>
+                        
+                        <p class="card-text"> <%= post.posts_content%> </p>
+                        
+                        <%= link_to 'Show More', post %>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>
