@@ -10,10 +10,15 @@ class PostsController < ApplicationController
   def landing_page
     @posts = Post.all
   end
+
+  def search
+    @search_art = Post.where("art_title LIKE ?", "%" + params[:q] + "%")
+  end
   
   # GET /posts/1
   # GET /posts/1.json
   def show
+
   end
 
   # GET /posts/new
@@ -23,6 +28,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+
   end
 
   # POST /posts
