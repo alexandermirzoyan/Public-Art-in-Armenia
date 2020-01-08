@@ -5,15 +5,14 @@
 
 <h1>Posts</h1>
 
-<%= link_to 'New Post', new_post_path %>
-
 <div class="container" >
     <div class="row" >
         <% @posts.each do |post| %>
             <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
                 <div class="card">
                     <div class="view overlay">
-                        <%= image_tag post_image(post), size: '200x200', class: 'mx-auto d-block' %> 
+                        <%= image_tag post_image(post), size: '200x200', class: 'rounded-circle mx-auto d-block' %> 
+                        <!-- <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap"> -->
                     </div>
 
                     <div class="card-body">
@@ -22,10 +21,6 @@
                         <p class="card-text"> <%= post.posts_content%> </p>
                         
                         <%= link_to 'Show More', post %>
-                        <br>
-                        <%= link_to 'Edit', edit_post_path(post) %>
-                        <br>
-                        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
                     </div>
                 </div>
             </div>

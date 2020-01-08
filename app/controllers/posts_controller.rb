@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate_user!
 
   # GET /posts
   # GET /posts.json
@@ -7,6 +8,10 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  def landing_page
+    @posts = Post.all
+  end
+  
   # GET /posts/1
   # GET /posts/1.json
   def show
@@ -70,6 +75,7 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.fetch(:post, {}).permit(:posts_content, :art_title)
+      # params.fetch(:post, {}).permit(:posts_content, :art_title)
+      params.fetch(:post, {}).permit(:posts_content, :art_title, :post_image)
     end
 end

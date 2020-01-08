@@ -34,8 +34,8 @@
 
 .input-post-wrapper {
     padding: 50px;
-    background: rgb(24,183,224);
-    background: linear-gradient(58deg, rgba(24,183,224,1) 1%, rgba(94,125,195,1) 39%, rgba(118,37,126,1) 82%);
+    background: rgb(43,1,59);
+    background: linear-gradient(90deg, rgba(43,1,59,1) 0%, rgba(28,9,38,1) 100%);
     .post-form-wrapper {
         height: 90vh;
         background-color: white;
@@ -53,7 +53,7 @@
 }
 
 .menu-list-item{
-    color:white; 
+    color:white;
     font-size:25px;
     &:hover{
         text-decoration: none;
@@ -72,4 +72,10 @@
     background-color: white;
     height: 70vh;
     border-radius: 10px;
+}
+.art-post-input{
+    border: 2px solid #007bfe !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

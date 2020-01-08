@@ -1,6 +1,7 @@
 <nav class="d-flex flex-column nav-background-wrapper h-100 " >
   <% if user_signed_in? %>
   
+    <%= link_to 'Art List', "/", :class => 'navbar-link d-flex justify-content-end pr-4 m-1 menu-list-item' %> 
     <%= link_to 'Post', "/posts", :class => 'navbar-link d-flex justify-content-end pr-4 m-1 menu-list-item' %> 
     <%= link_to 'About', "/static_pages/about", :class => 'navbar-link d-flex justify-content-end pr-4 m-1 menu-list-item' %> 
     
@@ -9,6 +10,7 @@
    
   <% else %>
   
+    <%= link_to "Art List", "/", :class => 'navbar-link d-flex justify-content-end pr-4 m-1 menu-list-item'%>
     <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link d-flex justify-content-end pr-4 m-1 menu-list-item'  %> 
     <%= link_to "Login", new_user_session_path, :class => 'navbar-link d-flex justify-content-end pr-4 m-1 menu-list-item' %>
   <% end %>
