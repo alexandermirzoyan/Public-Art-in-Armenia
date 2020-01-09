@@ -19,17 +19,23 @@
     border: 2px solid #007bfe;
 }
 
-.sign-up-button {
-    margin: 0 auto;
+.sign-up-button,
+.new-post-button {
     border: 1px solid #007bfe;
     border-radius: 0.25rem;
     color: #007bfe !important;
+    margin: auto;
     &:hover {
         transition: 0.3s;
         background: rgb(6,48,78);
         background: linear-gradient(90deg, rgba(6,48,78,1) 0%, rgba(39,87,97,1) 50%, rgba(6,48,78,1) 100%);
         color: white !important;
     }
+}
+
+.new-post-button {
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .input-post-wrapper {
@@ -49,7 +55,11 @@
 
 .nav-background-wrapper{
     background-color:rgb(30,10,38);
-    padding-top: 100px;  
+    padding-top: 100px; 
+    height: 100vh;
+    width: 20%;
+    position: fixed; 
+    box-shadow: 18px 14px 56px -4px rgba(51, 43, 43, 0.75);
 }
 
 .menu-list-item{
@@ -79,3 +89,23 @@
     justify-content: center;
     align-items: center;
 }
+.list-backgraund-wrapper{
+    background: rgb(84,38,102);
+    background: linear-gradient(90deg, rgba(84,38,102,1) 0%, rgba(56,17,77,1) 100%);
+}
+
+.show-posts-wrapper{
+    height: 90vh;
+    background-color: white;
+    padding: 50px 0;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+}
+.show-backgraund-wrapper{
+    background: rgb(84,38,102);
+    background: linear-gradient(90deg, rgba(84,38,102,1) 0%, rgba(56,17,77,1) 100%);
+    height: 100vh;
+}
+

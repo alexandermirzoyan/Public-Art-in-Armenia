@@ -1,6 +1,12 @@
-<%= @post.posts_content %>
-<%= @post.art_title %>
-<%= image_tag post_image(@post), size: '200x200', class: 'mx-auto d-block' %> 
+<div class="show-backgraund-wrapper p-5">
+<div class="show-posts-wrapper">
+<h1 class='ml-5'><%= @post.posts_content %></h1>
+<h1 class='ml-5'><%= @post.art_title %></h1>
+<h1 class='ml-5'><%= @post.city %></h1>
+<h1 class='ml-5'><%= @post.street %></h1>
+<h1 class='ml-5'><%= @post.zip %></h1>
+
+<%= image_tag post_image(@post), size: '400x400', class: 'd-block ml-5' %> 
 
 <div id="map" style="height:400px; width:600px;"><%=
     map(:center => {
@@ -15,4 +21,6 @@
 </div>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to '< Back', posts_path %>
+</div>
+</div>
