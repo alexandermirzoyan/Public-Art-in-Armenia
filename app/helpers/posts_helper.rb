@@ -3,7 +3,7 @@ module PostsHelper
         if post.post_image.attached?
             post.post_image
         else
-            image_url("avatar.png")
+            image_url("icon-no-image.svg")
         end
       end
 end
