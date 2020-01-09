@@ -32,6 +32,8 @@ gem 'activestorage-dropbox'
 gem 'activestorage'
 gem 'mini_magick'
 
+gem 'geocoder'
+gem 'leaflet-rails'
 
 group :production do 
   gem 'pg'

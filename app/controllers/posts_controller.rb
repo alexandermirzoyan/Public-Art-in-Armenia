@@ -22,6 +22,11 @@ class PostsController < ApplicationController
     @post = current_user.posts.build
   end
 
+  def search	
+    # @search_art = Post.where("art_title LIKE ?", "%" + params[:q] + "%")	
+    @search_art = Post.where("city LIKE '#{params[:q]}'")
+  end
+
   # GET /posts/1/edit
   def edit
   end
@@ -75,7 +80,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      # params.fetch(:post, {}).permit(:posts_content, :art_title)
-      params.fetch(:post, {}).permit(:posts_content, :art_title, :post_image)
+      params.fetch(:post, {}).permit(:posts_content, :art_title, :post_image, :street, :city, :zip, :search_art)
     end
 end
