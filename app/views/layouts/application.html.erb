@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100" >
   <head>
     <title>Public Art in Armenia</title>
     <%= csrf_meta_tags %>
@@ -16,12 +16,12 @@
      crossorigin=""></script>
   </head>
 
-  <body class="asd" >
-    <div class="d-flex main-page-wraper" >
+  <body class="h-100" >
+    <div class="d-flex main-page-wraper h-100" >
       <div class="w-25 navigation-wrapper" >
         <%= render "layouts/header" %>
       </div>
-      <div class="w-100 vh-100 main-content-wrapper" >
+      <div class="w-100 main-content-wrapper h-100" >
         <%= yield %>
       </div>
     </div>
