@@ -15,9 +15,20 @@
       <%= label_tag(:for_art_name, "Art name", id: "asd") %>
       <%= form.text_field :art_title, placeholder: 'Enter art name', class: "form-control art-post-input  ", id: "for_art_name" %>
   </div>
-  <div class="m-auto w-50 m-3" >
-      <%= label_tag(:for_art_place, "Art place") %>
-      <%= form.text_field :posts_content, placeholder: 'Enter art place', class: "form-control art-post-input ", id: "for_art_place" %>
+
+  <div class="m-auto w-50 m-3 pb-2">
+    <%= form.label :city %><br/>
+    <%= form.text_field :city, placeholder: 'Enter art city', class: "form-control art-post-input "%>
+  </div>
+
+  <div class="m-auto w-50 m-3 pb-2">
+    <%= form.label :street %><br/>
+    <%= form.text_field :street, placeholder: 'Enter art Street e.g (26 Saryan)', class: "form-control art-post-input "%>
+  </div>
+
+  <div class="m-auto w-50 m-3 pb-2">
+    <%= form.label :zip %><br/>
+    <%= form.text_field :zip, placeholder: 'Enter zip e.g (0025)', class: "form-control art-post-input "%>
   </div>
 
   <%= form.file_field :post_image, class: "sign-up-button w-25 p-2 d-flex justify-content-center"%>
@@ -26,19 +37,6 @@
     <%= form.submit class: "sign-up-button w-25 p-2 "%>
   </div>
 
-  <div class="form-group">
-  <%= form.label :street %><br/>
-  <%= form.text_field :street, autofocus: true%>
-</div>
-
-<div class="form-group">
-  <%= form.label :city %><br/>
-  <%= form.text_field :city, autofocus: true%>
-</div>
-
-<div class="form-group">
-  <%= form.label :zip %><br/>
-  <%= form.text_field :zip, autofocus: true%>
-</div>
+  
 <% end %>
 
