@@ -27,9 +27,11 @@
                         
                         <%= link_to 'Show More', post %>
                         <br>
-                        <%= link_to 'Edit', edit_post_path(post) %>
-                        <br>
-                        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+                        <% if current_user.id == post.user_id %>
+                            <%= link_to 'Edit', edit_post_path(post) %>
+                            <br>
+                            <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+                        <% end %>
                     </div>
                 </div>
             </div>
