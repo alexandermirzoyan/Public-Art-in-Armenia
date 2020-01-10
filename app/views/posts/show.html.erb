@@ -1,26 +1,28 @@
-<div class="show-background-wrapper p-5">
-<div class="show-posts-wrapper">
-<h1 class='ml-5'><%= @post.posts_content %></h1>
-<h1 class='ml-5'><%= @post.art_title %></h1>
-<h1 class='ml-5'><%= @post.city %></h1>
-<h1 class='ml-5'><%= @post.street %></h1>
-<h1 class='ml-5'><%= @post.zip %></h1>
+<%= link_to '< Home', root_path, class: "ml-5" %>
 
-<%= image_tag post_image(@post), size: '400x400', class: 'd-block ml-5' %> 
-
-<div id="map" style="height:400px; width:600px;"><%=
-    map(:center => {
-    :latlng => [@post.latitude, @post.longitude],
-    :zoom => 18
-    },
-    :markers => [{
-    :latlng => [@post.latitude, @post.longitude],
-    :zoom => 18
-    }])
-%>
-</div>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to '< Back', posts_path %>
-</div>
+<div class='container mt-5'>
+    <div class="d-flex" >
+        <div class="left-side mr-5" >
+            <div class="show-posts-wrapper  flex-column">
+                <%= image_tag post_image(@post), size: '400x400', class: 'd-block ml-5' %> 
+                <h1 class='ml-5'><%= @post.art_title %></h1>
+                <p class='ml-5'><b>City:</b> <%= @post.city %></p>
+                <p class='ml-5'><b>Street:</b> <%= @post.street %></p>
+                <p class='ml-5'><b>ZIP:</b> <%= @post.zip %></p>
+            </div>
+        </div>
+        <div class="right-side" >
+            <div id="map" style="height:400px; width:600px;"><%=
+                map(:center => {
+                :latlng => [@post.latitude, @post.longitude],
+                :zoom => 18
+                },
+                :markers => [{
+                :latlng => [@post.latitude, @post.longitude],
+                :zoom => 18
+                }])
+            %>
+        </div>
+        </div>
+    </div>
 </div>

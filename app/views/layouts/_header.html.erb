@@ -1,6 +1,6 @@
 <nav class="d-flex flex-column nav-background-wrapper h-100 " >
   <% if user_signed_in? %>
-  
+    <h1 class="text-center text-light mb-5" >Public Art in Armenia</h1>
     <%= link_to 'Art List', "/", :class => 'navbar-link d-flex justify-content-end pr-4 m-1 menu-list-item' %> 
     <%= link_to 'Post', "/posts", :class => 'navbar-link d-flex justify-content-end pr-4 m-1 menu-list-item' %> 
     
@@ -8,7 +8,7 @@
     <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link d-flex justify-content-end pr-4 m-1 menu-list-item'  %>
    
   <% else %>
-  
+    <h1 class="text-center text-light mb-5" >Public Art in Armenia</h1>
     <%= link_to "Art List", "/", :class => 'navbar-link d-flex justify-content-end pr-4 m-1 menu-list-item'%>
     <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link d-flex justify-content-end pr-4 m-1 menu-list-item'  %> 
     <%= link_to "Login", new_user_session_path, :class => 'navbar-link d-flex justify-content-end pr-4 m-1 menu-list-item' %>
